@@ -9,8 +9,11 @@
 		     url("../fonts/oswaldregular.woff2") format('woff2');
 }
 
+@import "normalize";
+@import "variables.scss";
+
 body {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: $first-font;
   margin-left: auto;
   margin-right: auto;
 }
@@ -25,7 +28,7 @@ body {
 	overflow: hidden;
 }
 
-@import "variables.scss";
+
 @import "blocks/additional-product.scss";
 @import "blocks/banner.scss";
 @import "blocks/button.scss";

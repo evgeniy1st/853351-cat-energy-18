@@ -10,7 +10,7 @@
 }
 
 .fieldset__input::placeholder {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $first-font;
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
@@ -18,7 +18,7 @@
 }
 
 .fieldset__legend {
-  font-family: Oswald;
+  font-family: $first-font;
   font-size: 24px;
   font-weight: normal;
   color: #111111;
