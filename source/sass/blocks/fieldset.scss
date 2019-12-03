@@ -1,0 +1,25 @@
+.fieldset {
+  border: none;
+}
+
+.fieldset__label {
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.fieldset__input::placeholder {
+  font-family: $first-font;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $small-text;
+}
+
+.fieldset__legend {
+  font-family: $first-font;
+  font-size: 24px;
+  font-weight: normal;
+  color: #111111;
+}

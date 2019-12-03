@@ -1,0 +1,13 @@
+.main-nav {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav__toggle {
+  width: 25px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-color: transparent;
+  border: none;
+}

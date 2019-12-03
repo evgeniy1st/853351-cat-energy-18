@@ -1,0 +1,19 @@
+.main-banner {
+  background-color: $main-green;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.main-banner__title {
+  font-size: 36px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.main-banner__slogan {
+  font-size: 14px;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+}

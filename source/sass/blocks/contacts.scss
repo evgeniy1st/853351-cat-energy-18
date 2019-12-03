@@ -1,0 +1,24 @@
+.contacts__text {
+  background-color: #f2f2f2;
+}
+
+.contacts__text--white {
+  background-color: #ffffff;
+}
+
+.contacts__title {
+  color: #111111;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  color: $small-text;
+  font-family: $second-font;
+  font-size: 14px;
+}
+
+.contacts__map {
+  background-color: #fdf7f1;
+}
