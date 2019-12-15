@@ -11,3 +11,15 @@
   background-color: transparent;
   border: none;
 }
+
+.main-nav__toggle {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 21px;
+  background-image: url("../img/icon-close.svg");
+}
+
+.main-nav__list {
+  padding: 0;
+}

@@ -1,7 +1,19 @@
 .promo {
-  background-color: $main-green;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+}
+.promo__wrap {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-color: $main-green;
+  min-height: 289px;
+  display: flex;
+  background-position: center;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .promo__text {
@@ -10,4 +22,12 @@
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   color: #ffffff;
+  background-size: 56px 61px;
+  background-position: center top;
+  text-align: center;
+  width: 159px;
+  height: 181px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 46px;
 }

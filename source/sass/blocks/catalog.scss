@@ -1,3 +1,17 @@
 .catalog__list {
   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.catalog__item {
+  width: 100%;
+  border-top: 1px solid;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
