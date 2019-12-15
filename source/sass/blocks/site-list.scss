@@ -1,6 +1,28 @@
 .site-list {
   list-style: none;
+  padding: 0;
+  display: flex;
+  width: 570px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
   a {
     text-decoration: none;
   }
+}
+
+@media (max-width: 768px) {
+  .site-list {
+      display: block;
+      width: 320px;
+    }
+  .site-list__item {
+      width: 320px;
+      text-align: center;
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 24px 0;
+      border-top: 1px solid rgba(0,0,0,0.2)
+    }
 }

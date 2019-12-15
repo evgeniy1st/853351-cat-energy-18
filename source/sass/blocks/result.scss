@@ -1,11 +1,33 @@
 .result__title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: normal;
   color: #111111;
   border: 1px solid $small-text;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .result__text {
   font-family: $second-font;
   font-size: 12px;
   color: $small-text;
+  position: absolute;
+  bottom: -16px;
+  width: 57px;
+  text-align: center;
+  background-color: rgb(242, 242, 242);
+  left: 23px;
+  padding: 0 9px;
+}
+
+.result__wrap {
+  position: relative;
+  box-sizing: border-box;
+  width: 124px;
+  min-height: 56px;
+  display: flex;
 }

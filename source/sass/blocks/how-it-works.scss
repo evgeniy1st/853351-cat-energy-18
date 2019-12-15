@@ -1,5 +1,17 @@
+.how-it-works {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  padding-top: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  padding-bottom: 42px;
+}
+
 .how-it-works__list {
   list-style: none;
+  padding: 0;
 }
 
 .how-it-works__item  {

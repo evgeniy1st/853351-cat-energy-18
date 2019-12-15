@@ -1,5 +1,16 @@
 .page-footer {
   background-color: #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 39px;
+  padding-bottom: 31px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  padding-right: 20px;
 }
 
 .page-footer__developer-link {
