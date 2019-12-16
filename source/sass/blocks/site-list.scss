@@ -20,3 +20,7 @@
   padding: 24px 0;
   border-top: 1px solid rgba(0,0,0,0.2)
 }
+
+.site-list__item:last-child {
+  border-bottom: 1px solid rgba(0,0,0,0.2)
+}

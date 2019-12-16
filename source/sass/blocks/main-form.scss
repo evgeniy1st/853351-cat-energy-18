@@ -1,12 +1,40 @@
+.main-form {
+  width: 320px;
+  box-sizing: border-box;
+}
+
 .main-form__title {
   font-size: 14px;
   font-weight: normal;
   color: #111111;
   text-transform: uppercase;
+  margin-bottom: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .main-form__wrap small {
   font-family: $second-font;
   font-size: 14px;
   color: $small-text;
+}
+
+.main-form__wrap {
+  display: flex;
+  padding-bottom: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  min-height: 109px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-form__button {
+  width: 100%;
+  padding: 12px 0;
 }

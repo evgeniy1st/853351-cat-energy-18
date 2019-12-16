@@ -1,25 +1,96 @@
 .fieldset {
   border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &--target,
+  &--additionally {
+    padding-bottom: 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-bottom: 21px;
+    padding-top: 21px;
+    align-items: center;
+  }
+
+  &--additionally {
+    border: none;
+  }
 }
+
 
 .fieldset__label {
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
   color: #222222;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: baseline;
+
+  span {
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+  }
+
+  &--radio,
+  &--checkbox {
+    width: 230px;
+    margin-bottom: 13px;
+  }
 }
 
-.fieldset__input::placeholder {
-  font-family: $first-font;
-  font-size: 16px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: $small-text;
+
+.fieldset__input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 45px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  max-width: 81%;
+  min-width: 70px;
+
+  &::placeholder {
+    font-family: $first-font;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $small-text;
+  }
+
+&--comment {
+    max-width: 100%;
+    padding: 15px;
+    min-height: 150px;
+  }
 }
+
+.fieldset__radio,
+.fieldset__checkbox {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 13px;
+  }
 
 .fieldset__legend {
   font-family: $first-font;
   font-size: 24px;
   font-weight: normal;
   color: #111111;
+
+  &--green-line {
+    margin: 30px 0;
+  }
 }
