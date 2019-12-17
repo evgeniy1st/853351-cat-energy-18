@@ -34,3 +34,22 @@
 .contacts__map {
   background-color: #fdf7f1;
 }
+
+@media (min-width: 768px) {
+    .contacts {
+    width: 768px;
+  }
+
+  .contacts__text {
+    justify-content: space-between;
+  }
+
+  .contacts__title {
+    width: 154px;
+  }
+
+    .contacts__address {
+    width: 154px;
+    text-align: right;
+  }
+}

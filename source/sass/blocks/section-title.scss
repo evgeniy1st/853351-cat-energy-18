@@ -4,3 +4,11 @@
   color: #111111;
   margin: 33px 0;
 }
+
+@media (min-width: 768px) {
+    .section-title {
+    font-size: 60px;
+    margin: 55px 0;
+    padding: 0 30px;
+  }
+}

@@ -19,3 +19,18 @@
   text-decoration: none;
   color: $small-text;
 }
+
+@media (min-width: 768px) {
+    .page-footer {
+    width: 768px;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+    min-height: 150px;
+  }
+
+    .page-footer__logo {
+    width: 128px;
+  }
+}

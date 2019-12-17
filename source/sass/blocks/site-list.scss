@@ -24,3 +24,26 @@
 .site-list__item:last-child {
   border-bottom: 1px solid rgba(0,0,0,0.2)
 }
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    width: 468px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a {
+      font-size: 18px;
+    }
+  }
+
+  .site-list__item {
+    box-sizing: border-box;
+    width: auto;
+    border: none;
+  }
+
+  .site-list__item:last-child {
+    border: none;
+  }
+}

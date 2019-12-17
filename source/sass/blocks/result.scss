@@ -31,3 +31,27 @@
   min-height: 56px;
   display: flex;
 }
+
+@media (min-width: 768px) {
+    .result__wrap {
+    width: 162px;
+    min-height: 72px;
+  }
+
+  .result__title {
+    font-size: 30px;
+  }
+
+  .result__text {
+    font-size: 14px;
+    bottom: -5px;
+    width: 129px;
+    background-color: #ffffff;
+    left: 9px;
+    padding: 0 7px;
+  }
+
+    .result__wrap--weight {
+    margin-right: 42px;
+  }
+}

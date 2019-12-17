@@ -23,3 +23,10 @@
 .main-nav__list {
   padding: 0;
 }
+
+@media (min-width: 768px) {
+  .main-nav__toggle {
+  display: none;
+}
+
+}

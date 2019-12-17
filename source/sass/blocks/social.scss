@@ -14,3 +14,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: 768px) {
+    .social {
+    width: 150px;
+    border: none;
+    margin: 0;
+  }
+}
