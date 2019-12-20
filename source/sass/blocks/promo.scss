@@ -26,8 +26,34 @@
   background-position: center top;
   text-align: center;
   width: 159px;
-  height: 181px;
+  min-height: 181px;
   display: flex;
   align-items: flex-end;
   margin-bottom: 46px;
+}
+
+@media (min-width: 768px) {
+
+  .promo {
+    padding: 0 30px;
+  }
+
+  .promo__wrap {
+    min-height: 200px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
+    background-position: 91px center, center;
+    background-size: 56px 61px, auto;
+  }
+
+  .promo__text {
+    margin: 0;
+    width: 161px;
+    text-align: left;
+    min-height: 60px;
+    margin-right: 125px;
+    background-image: none;
+  }
 }

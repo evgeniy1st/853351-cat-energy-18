@@ -42,14 +42,26 @@
 
   .contacts__text {
     justify-content: space-between;
+    min-height: 201px;
+    box-sizing: border-box;
+    padding-top: 69px;
+    padding-left: 71px;
+    padding-right: 71px;
   }
 
   .contacts__title {
     width: 154px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
     .contacts__address {
-    width: 154px;
     text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+    width: 159px;
+    span {
+      padding-top: 10px;
+    }
   }
 }

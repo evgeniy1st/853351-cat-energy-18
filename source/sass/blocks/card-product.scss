@@ -44,3 +44,40 @@
   width: 100%;
   padding: 12px 0;
 }
+
+@media (min-width: 768px) {
+
+    .card-product__wrap {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -61px;
+  }
+
+  .card-product__description {
+    width: 100%;
+    padding-top: 39px;
+  }
+
+  .card-product__title {
+    font-size: 20px;
+    width: 158px;
+    align-self: center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+
+  .card-product__info {
+    margin-bottom: 33px;
+    font-size: 16px;
+
+      dt {
+      border-bottom: 1px solid;
+      padding: 5px 0;
+    }
+      dd {
+      border-bottom: 1px solid;
+      padding: 5px 0;
+    }
+  }
+}
