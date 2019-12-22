@@ -94,3 +94,71 @@
     margin: 30px 0;
   }
 }
+
+@media (min-width: 768px) {
+
+  .fieldset {
+    padding-left: 0;
+    padding-right: 0;
+
+    &--basic {
+      margin-bottom: 59px;
+    }
+
+    &--target {
+      border: 1px solid;
+      padding: 25px;
+      margin-bottom: 79px;
+    }
+
+    &--contacts {
+      margin-bottom: 70px;
+      }
+
+    &--comment {
+      margin-bottom: 70px;
+    }
+
+    &--additionally {
+      padding: 0;
+      margin-bottom: 54px;
+    }
+  }
+
+  .fieldset__input {
+    min-width: 497px;
+    max-width: 567px;
+    height: 52px;
+
+    &--comment {
+    max-width: 100%;
+    }
+  }
+
+  .fieldset__label {
+    font-size: 20px;
+
+    span {
+      font-size: 20px;
+    }
+
+    &--radio {
+      width: 92%;
+      justify-content: flex-start;
+    }
+
+    &--checkbox {
+      width: 42%;
+    }
+  }
+
+  .fieldset__legend--green-line {
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-size: 36px;
+  }
+
+  .fieldset__checkbox {
+    width: 3%;
+  }
+}

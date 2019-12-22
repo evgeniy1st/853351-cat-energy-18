@@ -38,3 +38,33 @@
   width: 100%;
   padding: 12px 0;
 }
+
+@media (min-width: 768px) {
+
+  .main-form {
+    width: 768px;
+    padding: 0 70px;
+  }
+
+  .main-form__title {
+    margin-top: 0;
+    font-size: 20px;
+    width: 385px;
+    margin-bottom: 69px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main-form__wrap {
+    flex-direction: row;
+  }
+
+  .main-form__button {
+    width: 283px;
+    font-size: 20px;
+  }
+
+  .main-form__wrap small {
+    font-size: 16px;
+  }
+}
