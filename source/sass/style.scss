@@ -30,7 +30,7 @@ body {
 	overflow: hidden;
 }
 
-
+@import "blocks/section-title.scss";
 @import "blocks/additional-product.scss";
 @import "blocks/banner.scss";
 @import "blocks/button.scss";
@@ -52,7 +52,6 @@ body {
 @import "blocks/preview-catalog.scss";
 @import "blocks/promo.scss";
 @import "blocks/result.scss";
-@import "blocks/section-title.scss";
 @import "blocks/site-list.scss";
 @import "blocks/show-more.scss";
 @import "blocks/social.scss";

@@ -57,3 +57,31 @@
     background-image: none;
   }
 }
+
+@media (min-width: 1440px) {
+
+.promo {
+    padding-left: 0;
+    padding-right: 110px;
+    width: 355px;
+    display: inline-block;
+    min-height: 289px;
+    margin-bottom: 0;
+    vertical-align: bottom;
+    margin-bottom: 86px;
+  }
+
+  .promo__wrap {
+    min-height: 289px;
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
+    background-position: center 47px, center;
+    justify-content: center;
+  }
+
+  .promo__text {
+    text-align: center;
+    margin-right: 0;
+    align-self: flex-end;
+    padding-bottom: 43px;
+  }
+}

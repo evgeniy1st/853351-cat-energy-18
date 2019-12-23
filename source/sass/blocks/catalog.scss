@@ -48,3 +48,28 @@
     margin-bottom: -71px;
   }
 }
+
+@media (min-width: 1440px) {
+  .catalog__item {
+    width: 245px;
+    margin-right: 80px;
+  }
+
+  .catalog__item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .page-title {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .catalog {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+.catalog__list {
+    justify-content: flex-start;
+  }
+}

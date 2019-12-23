@@ -65,3 +65,19 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+
+  .contacts {
+    width: 1440px;
+    position: relative;
+  }
+
+  .contacts__text {
+    background-color: #ffffff;
+    position: absolute;
+    width: 570px;
+    left: 110px;
+    top: 95px;
+  }
+}

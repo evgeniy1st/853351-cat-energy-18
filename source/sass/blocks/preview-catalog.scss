@@ -84,5 +84,34 @@
   .preview-catalog__link {
     font-size: 20px;
   }
+}
 
+@media (min-width: 1440px) {
+
+  .preview-catalog {
+    width: 1440px;
+    margin-bottom: 79px;
+  }
+
+  .preview-catalog__list {
+    margin: 0;
+    width: 100%;
+    padding: 0 110px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .preview-catalog__item {
+    width: 570px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .preview-catalog__link {
+    margin-top: auto;
+  }
 }

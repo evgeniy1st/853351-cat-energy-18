@@ -7,6 +7,12 @@
 @media (min-width: 768px) {
 
   .page-main {
-  width: 768px;
+    width: 768px;
+  }
 }
+
+@media (min-width: 1440px) {
+  .page-main {
+    width: 1440px;
+  }
 }

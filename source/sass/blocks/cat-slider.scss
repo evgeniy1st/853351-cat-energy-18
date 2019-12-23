@@ -6,3 +6,12 @@
   font-size: 16px;
   text-transform: uppercase;
 }
+
+@media (min-width: 1440px) {
+
+  .cat-slider__controls {
+    display: flex;
+    width: 76%;
+    justify-content: space-between;
+  }
+}

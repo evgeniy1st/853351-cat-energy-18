@@ -109,3 +109,38 @@
     }
   }
 }
+
+
+@media (min-width: 1440px) {
+
+  .additional-product {
+    padding-left: 110px;
+    padding-right: 80px;
+    margin-bottom: 86px;
+    width: 1081px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .additional-product__title {
+    padding: 0;
+  }
+  .additional-product__item {
+    border-left: none;
+    border-right: none;
+    padding: 16px 0;
+    align-items: center;
+    padding: 14px 0;
+  }
+  .additional-product__name {
+    width: 200px;
+    margin: 0;
+    align-self: center;
+  }
+  .additional-product__button {
+    width: 245px;
+  }
+
+  .additional-product__table {
+    padding-bottom: 0;
+  }
+}
