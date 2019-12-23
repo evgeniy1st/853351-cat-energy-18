@@ -162,3 +162,40 @@
     width: 3%;
   }
 }
+
+@media (min-width: 1440px) {
+
+  .fieldset {
+
+    &--basic {
+      width: 568px;
+      margin-right: 71px;
+    }
+    &--target {
+      width: 570px;
+      min-height: 188px;
+    }
+  }
+
+  .fieldset__input {
+    min-width: 436px;
+    max-width: 506px;
+
+    &--comment {
+      max-width: 100%;
+    }
+  }
+
+  .fieldset__label {
+
+    &--radio {
+      width: 91%;
+    }
+    &--contacts {
+      width: 47%;
+    }
+    &--checkbox {
+      width: 19%;
+    }
+  }
+}
