@@ -1,5 +1,17 @@
+.how-it-works {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  padding-top: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  padding-bottom: 42px;
+}
+
 .how-it-works__list {
   list-style: none;
+  padding: 0;
 }
 
 .how-it-works__item  {
@@ -7,3 +19,75 @@
   font-size: 14px;
   color: $small-text;
 }
+
+@media (min-width: 768px) {
+    .how-it-works {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 1px solid;
+  }
+
+  .how-it-works__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .how-it-works__item {
+    min-height: 228px;
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+
+    .how-it-works__item--structure p {
+    width: 203px;
+  }
+
+  .how-it-works__item--enjoy p {
+    width: 245px;
+  }
+
+  .how-it-works__description {
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  .how-it-works__item--form p {
+    width: 222px;
+  }
+
+  .how-it-works__item--replacement p {
+    width: 205px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .how-it-works {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+    border: none;
+    margin-bottom: 90px;
+    padding-bottom: 0;
+  }
+
+  .how-it-works__title {
+    padding: 0;
+    margin-bottom: 89px;
+    margin-top: 0;
+  }
+
+  .how-it-works__item {
+    width: 244px;
+  }
+
+  .how-it-works__list {
+    margin: 0;
+  }
+}
+

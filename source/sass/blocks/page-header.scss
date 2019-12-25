@@ -1,3 +1,45 @@
 .page-header {
   font-size: 20px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 320px;
+  flex-direction: column;
+  padding-top: 11px;
+}
+
+.page-header__logo {
+  width: 191px;
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .page-header{
+    width: 768px;
+    flex-direction: row;
+    padding-left: 29px;
+    padding-right: 31px;
+    margin-bottom: 68px;
+  }
+
+  .page-header__logo {
+    width: 174px;
+    padding: 0;
+  }
+
+  .page-header__logo-image {
+    width: 174px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-header {
+    width: 1440px;
+    padding-left: 109px;
+    padding-right: 109px;
+    padding-top: 53px;
+  }
 }

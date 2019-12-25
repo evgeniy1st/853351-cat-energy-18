@@ -1,5 +1,146 @@
+.additional-product {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
 .additional-product__title {
   font-family: $first-font;
   font-size: 24px;
   font-weight: normal;
+}
+
+.additional-product__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.additional-product__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding-bottom: 17px;
+  padding-top: 14px;
+}
+
+.additional-product__item:first-child {
+  border-top: 1px solid;
+}
+
+.additional-product__name {
+  align-self: flex-start;
+  text-transform: uppercase;
+}
+
+.additional-product__table {
+  font-family: $second-font;
+  font-size: 12px;
+  font-weight: normal;
+  color: $small-text;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 14px;
+    dt {
+    width: 50%;
+  }
+
+  dd {
+    margin: 0;
+    width: 50%;
+    text-align: right;
+  }
+}
+
+.additional-product__button {
+  width: 100%;
+  padding: 12px 0;
+}
+
+@media (min-width: 768px) {
+
+  .additional-product {
+    padding: 0 30px;
+    margin-bottom: 63px;
+  }
+
+  .additional-product__list {
+    margin-bottom: 0;
+  }
+
+  .additional-product__item {
+    padding: 28px 37px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+    .additional-product__title {
+    margin-top: 0;
+    padding-left: 37px;
+    margin-bottom: 75px;
+    font-size: 36px;
+  }
+
+  .additional-product__name {
+    margin-top: 0;
+    margin-bottom: 26px;
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .additional-product__table {
+    width: 33%;
+    font-size: 16px;
+
+    dt {
+      width: 70%;
+    }
+
+    dd {
+      width: 30%;
+    }
+  }
+}
+
+
+@media (min-width: 1440px) {
+
+  .additional-product {
+    padding-left: 110px;
+    padding-right: 80px;
+    margin-bottom: 86px;
+    width: 1081px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .additional-product__title {
+    padding: 0;
+  }
+  .additional-product__item {
+    border-left: none;
+    border-right: none;
+    padding: 16px 0;
+    align-items: center;
+    padding: 14px 0;
+  }
+  .additional-product__name {
+    width: 200px;
+    margin: 0;
+    align-self: center;
+  }
+  .additional-product__button {
+    width: 245px;
+  }
+
+  .additional-product__table {
+    padding-bottom: 0;
+  }
 }

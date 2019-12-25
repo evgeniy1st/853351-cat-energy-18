@@ -1,14 +1,23 @@
 .main-banner {
-  background-color: $main-green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 167px, center top;
+  background-size: 280px 270px, 320px 305px;
+  min-height: 502px;
+  width: 320px;
   color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-banner__title {
   font-size: 36px;
   text-align: center;
   font-weight: normal;
+  margin-top: 0;
 }
 
 .main-banner__slogan {
@@ -16,4 +25,68 @@
   text-align: center;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+.main-banner__button {
+padding: 12px;
+width: 280px;
+box-sizing: border-box;
+align-self: center;
+}
+
+@media (min-width: 768px) {
+
+  .main-banner {
+    background-image: url("../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center 167px;
+    background-size: 709px 609px;
+    min-height: 806px;
+    width: 768px;
+    color: #000000;
+    justify-content: flex-start;
+  }
+
+  .main-banner__title {
+    font-size: 60px;
+    text-align: left;
+  }
+
+  .main-banner__slogan {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .main-banner__button {
+    width: 245px;
+    align-self: flex-start;
+    margin-top: 48px;
+  }
+
+    .main-banner__text {
+    width: 415px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .main-banner {
+    width: 1440px;
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-size: 552px 499px, 718px auto;
+    background-position: 568px 142px, 724px 0;
+    margin-top: -190px;
+    min-height: 696px;
+    margin-bottom: 80px;
+  }
+
+.main-banner__button {
+    font-size: 20px;
+    margin-left: 193px;
+  }
+
+.main-banner__text {
+    margin-left: 193px;
+    margin-top: 209px;
+  }
 }

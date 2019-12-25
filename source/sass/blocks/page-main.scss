@@ -1,0 +1,18 @@
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+
+  .page-main {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-main {
+    width: 1440px;
+  }
+}

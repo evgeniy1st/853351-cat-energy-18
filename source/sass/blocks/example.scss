@@ -1,5 +1,13 @@
 .example {
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  justify-content: flex-start;
 }
 
 .example__description {
@@ -12,4 +20,116 @@
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
+  margin-top: 38px;
+  text-align: center;
+}
+
+.example__result {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 27px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.example__slider {
+  min-height: 364px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 39px;
+}
+
+@media (min-width: 768px) {
+    .example {
+    background-color: transparent;
+    flex-direction: row;
+    width: 768px;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    min-height: 1023px;
+    align-content: unset;
+  }
+
+  .example__description {
+    font-size: 16px;
+    width: 675px;
+    padding: 0 30px;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+
+  .example__result {
+    justify-content: flex-start;
+    width: 500px;
+    padding-left: 30px;
+  }
+
+  .example__price {
+    font-size: 20px;
+    margin-top: 0;
+    text-align: right;
+    width: 174px;
+    padding-right: 30px;
+  }
+
+    .example__slider {
+    min-height: 462px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f2f2f2;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .example {
+    width: 1440px;
+    background-color: #f2f2f2;
+    min-height: 462px;
+  }
+
+  .example__title {
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 0;
+    padding-bottom: 66px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .example__description {
+    width: 51%;
+    box-sizing: border-box;
+    padding-left: 110px;
+    padding-top: 39px;
+  }
+
+  .example__result {
+    width: 51%;
+    padding-left: 110px;
+  }
+
+  .example__price {
+    box-sizing: border-box;
+    width: 51%;
+    text-align: left;
+    padding-left: 110px;
+    margin-top: 47px;
+    padding-bottom: 45px;
+  }
+
+  .example__slider {
+    width: 49%;
+    margin-top: -348px;
+    background-color: transparent;
+  }
 }
