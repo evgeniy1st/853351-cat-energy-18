@@ -30,8 +30,8 @@
     <h1 class="page-title page-title--form">Подбор программы</h1>
     <h2 class="main-form__title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
     <form class="main-form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="main-form__fieldset fieldset fieldset--basic">
-        <legend class="visually-hidden">Базовая информация о питомце</legend>
+      <div class="main-form__fieldset fieldset fieldset--basic">
+        <h3 class="visually-hidden">Базовая информация о питомце</h3>
         <label class="fieldset__label" for="cat-name">
           <span>Имя:*</span>
           <input class="fieldset__input" type="text" id="cat-name" placeholder="Барсик" name="cat-name" required>
@@ -44,22 +44,22 @@
           <span>Возраст (лет):</span>
           <input class="fieldset__input" type="text" id="cat-age" placeholder="7" name="cat-age">
         </label>
-      </fieldset>
+      </div>
 
-      <fieldset class="main-form__fieldset fieldset fieldset--target">
-        <legend class="visually-hidden">Цель подбора программы</legend>
+      <div class="main-form__fieldset fieldset fieldset--target">
+        <h3 class="visually-hidden">Цель подбора программы</h3>
         <input class="fieldset__radio" type="radio" id="losing-weight" name="target" value="losing-weight" checked>
         <label class="fieldset__label fieldset__label--radio" for="losing-weight">Похудение</label>
         <input class="fieldset__radio" type="radio" id="mass-gain" name="target" value="mass-gain">
         <label class="fieldset__label fieldset__label--radio" for="mass-gain">Набор массы</label>
         <input class="fieldset__radio" type="radio" id="unknow" name="target" value="unknow">
         <label class="fieldset__label fieldset__label--radio" for="unknow">Не знаю (Нужен ваш совет)</label>
-      </fieldset>
+      </div>
 
-      <fieldset class="main-form__fieldset fieldset fieldset--contacts">
-        <legend class="fieldset__legend fieldset__legend--green-line">
+      <div class="main-form__fieldset fieldset fieldset--contacts">
+        <h3 class="fieldset__legend fieldset__legend--green-line">
           Контактные данные (владельца кота)
-        </legend>
+        </h3>
         <label class="fieldset__label fieldset__label--contacts" for="input-email">
           <span>E-mail:*</span>
           <input class="fieldset__input fieldset__input--contacts" type="email" id="input-email" placeholder="kuklachev@gmail.com" name="input-email" required>
@@ -68,17 +68,17 @@
           <span>Телефон:*</span>
           <input class="fieldset__input fieldset__input--contacts" type="tel" id="input-phone" placeholder="8 (960) 900-60-90" name="input-phone" required>
         </label>
-      </fieldset>
+      </div>
 
-      <fieldset class="main-form__fieldset fieldset fieldset--comment">
-        <legend class="fieldset__legend fieldset__legend--green-line">
+      <div class="main-form__fieldset fieldset fieldset--comment">
+        <h3 class="fieldset__legend fieldset__legend--green-line">
           Комментарий
-        </legend>
+        </h3>
         <textarea class="fieldset__input fieldset__input--comment" id="input-comment" placeholder="Расскажите обо всех повадках кота" name="input-comment"></textarea>
-      </fieldset>
+      </div>
 
-      <fieldset class="main-form__fieldset fieldset fieldset--additionally">
-        <legend class="fieldset__legend fieldset__legend--green-line">Дополнительно</legend>
+      <div class="main-form__fieldset fieldset fieldset--additionally">
+        <h3 class="fieldset__legend fieldset__legend--green-line">Дополнительно</h3>
         <input class="fieldset__checkbox" type="checkbox" id="input-sweetener" name="sweetener" checked>
         <label class="fieldset__label fieldset__label--checkbox" for="input-sweetener">Сахарозаменитель</label>
         <input class="fieldset__checkbox" type="checkbox" id="input-water" name="water">
@@ -87,7 +87,7 @@
         <label class="fieldset__label fieldset__label--checkbox" for="input-milk">Молоко</label>
         <input class="fieldset__checkbox" type="checkbox" id="input-vitamins" name="vitamins">
         <label class="fieldset__label fieldset__label--checkbox" for="input-vitamins">Витамины</label>
-      </fieldset>
+      </div>
       <div class="main-form__wrap">
         <button class="main-form__button button">Отправить заявку</button>
         <small>* — Обязательные поля</small>
