@@ -1,3 +1,13 @@
+.cat-slider {
+  background-image: url("../img/before-mobile@1x.png");
+  background-position: center 22px;
+  background-repeat: no-repeat;
+
+    &--after {
+      background-image: url("../../img/after-mobile@1x.png");
+    }
+}
+
 .cat-slider__button {
   border: none;
   background-color: transparent;
@@ -5,6 +15,48 @@
   font-family: $first-font;
   font-size: 16px;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &--after {
+    margin-left: auto;
+  }
+
+  &--before {
+    margin-right: 9px;
+    padding-left: 14px;
+  }
+}
+
+.cat-slider__controls {
+  display: flex;
+  width: 220px;
+  justify-content: flex-start;
+}
+
+.cat-slider__indicator {
+  width: 85px;
+  margin-top: 1px;
+  display: flex;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #cdcdcd;
+  justify-content: left;
+  align-items: center;
+  padding: 0 6px;
+  box-sizing: border-box;
+
+  &--after {
+    justify-content: right;
+  }
+}
+
+.cat-slider__indicator span {
+  width: 35px;
+  height: 6px;
+  background-color: $main-green;
+  border-radius: 5px;
+  box-sizing: content-box;
 }
 
 @media (min-width: 1440px) {

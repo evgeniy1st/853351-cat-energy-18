@@ -7,17 +7,17 @@
   width: 25px;
   height: 19px;
   background-repeat: no-repeat;
-  background-image: url("../img/icon-mobile-menu.svg");
+  background-image: url("../img/icon-close.svg");
   background-color: transparent;
   border: none;
-}
-
-.main-nav__toggle {
   display: block;
   position: absolute;
   right: 20px;
-  top: 21px;
-  background-image: url("../img/icon-close.svg");
+  top: 22px;
+}
+
+.main-nav__toggle--close {
+  background-image: url("../img/icon-mobile-menu.svg");
 }
 
 .main-nav__list {
@@ -25,8 +25,12 @@
 }
 
 @media (min-width: 768px) {
-  .main-nav__toggle {
-  display: none;
+
+    .main-nav__toggle {
+    display: none;
+  }
 }
 
+.main-nav__list--close {
+  display: none;
 }

@@ -14,25 +14,75 @@
   background-color: #f2f2f2;
   margin-left: 20px;
   margin-right: 20px;
-  min-height: 266px;
   padding: 22px;
+  min-height: 222px;
+  padding-left: 20px;
 }
 
 .preview-catalog__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .preview-catalog__title {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: normal;
+  margin: 0;
+  padding-top: 13px;
+  padding-left: 71px;
+  padding-bottom: 35px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $main-green;
+    box-sizing: border-box;
+    top: 2px;
+    left: 2px;
+  }
+}
+
+.preview-catalog__item--losing-weight .preview-catalog__title::after {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-image: url("../img/icon-cat-slim.svg");
+  top: 0px;
+  left: 2px;
+}
+
+.preview-catalog__item--mass-gain .preview-catalog__title::after {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 68px;
+  height: 72px;
+  top: -8px;
+  left: -7px;
+  position: absolute;
+  background-image: url("../img/icon-cat-pro.svg");
 }
 
 .preview-catalog__description {
   font-family: $second-font;
   color: $small-text;
   border-bottom: 1px solid $small-text;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .preview-catalog__link {
@@ -40,7 +90,16 @@
   text-transform: uppercase;
   color: #111111;
   text-decoration: none;
+  padding-top: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 12px;
+  background-position: right 21px;
+  min-width: 121px;
 }
+
 
 @media (min-width: 768px) {
     .preview-catalog__list {

@@ -6,13 +6,40 @@
   border-top: 1px solid;
   width: 100%;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
-.social__item {
+.social__item a {
+  display: inline-block;
+  vertical-align: middle;
   width: 22px;
   height: 19px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.social__item {
+  margin-right: 36px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__item--vk a {
+  background-image: url("../img/icon-vk.svg");
+}
+
+.social__item--inst a {
+  background-image: url("../img/icon-insta.svg");
+}
+
+.social__item--fb a {
+  background-image: url("../img/icon-fb.svg");
 }
 
 @media (min-width: 768px) {
