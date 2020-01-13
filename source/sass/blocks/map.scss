@@ -8,3 +8,9 @@
     object-fit: cover;
   }
 }
+
+@media (min-width: 1440px) {
+  .map {
+  height: 400px;
+}
+}

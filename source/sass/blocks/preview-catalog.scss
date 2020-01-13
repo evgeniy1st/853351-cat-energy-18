@@ -193,7 +193,50 @@
 
   .preview-catalog {
     width: 1440px;
-    margin-bottom: 79px;
+    margin-bottom: 37px;
+  }
+
+  .preview-catalog__title {
+    margin-bottom: 71px;
+    width: 304px;
+    margin-left: 161px;
+  }
+
+  .preview-catalog__title::before {
+    width: 100px;
+    height: 100px;
+    top: -27px;
+    left: -161px;
+  }
+
+  .preview-catalog__item--mass-gain .preview-catalog__title::before {
+    width: 100px;
+    height: 100px;
+    top: -27px;
+    left: -161px;
+  }
+
+  .preview-catalog__item--mass-gain .preview-catalog__title::after {
+    width: 134px;
+    height: 57px;
+    top: -6px;
+    left: -179px;
+  }
+
+  .preview-catalog__item--losing-weight .preview-catalog__title::after {
+    width: 71px;
+    height: 97px;
+    top: -33px;
+    left: -147px;
+  }
+
+  .preview-catalog__description {
+    width: 464px;
+    margin-bottom: 31px;
+  }
+
+  .preview-catalog__item--mass-gain .preview-catalog__description {
+    width: 466px;
   }
 
   .preview-catalog__list {
@@ -212,9 +255,16 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-right: 52px;
   }
 
   .preview-catalog__link {
     margin-top: auto;
+    background-position: 131px 5px;
+    margin-top: 0;
+  }
+
+  .preview-catalog__item--mass-gain .preview-catalog__link {
+    background-position: 125px 6px;
   }
 }

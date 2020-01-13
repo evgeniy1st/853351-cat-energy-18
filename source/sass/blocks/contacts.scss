@@ -89,6 +89,11 @@
 
   .contacts {
     position: relative;
+
+    &__wrap {
+      width: 1440px;
+      position: relative;
+    }
   }
 
   .contacts__text {
@@ -97,5 +102,12 @@
     width: 570px;
     left: 110px;
     top: 95px;
+    padding-left: 76px;
+    padding-right: 90px;
+  }
+
+  .contacts__address {
+    text-align: left;
+    width: 155px;
   }
 }
