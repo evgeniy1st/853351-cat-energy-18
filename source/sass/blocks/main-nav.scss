@@ -24,13 +24,19 @@
   padding: 0;
 }
 
+.main-nav__list--close {
+  display: none;
+}
+
 @media (min-width: 768px) {
 
     .main-nav__toggle {
     display: none;
   }
+
+    .main-nav__list--close {
+    display: flex;
+  }
 }
 
-.main-nav__list--close {
-  display: none;
-}
+

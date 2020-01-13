@@ -4,8 +4,12 @@
   background-repeat: no-repeat;
 
     &--after {
-      background-image: url("../../img/after-mobile@1x.png");
+      background-image: url("../img/after-mobile@1x.png");
     }
+
+    &--before {
+    background-image: url("../img/before-mobile@1x.png");
+  }
 }
 
 .cat-slider__button {
@@ -57,6 +61,134 @@
   background-color: $main-green;
   border-radius: 5px;
   box-sizing: content-box;
+}
+
+@media (min-width: 768px) {
+  .cat-slider__wrap {
+    background-color: #f2f2f2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    .cat-slider {
+    background-image: none;
+
+      &--after {
+        background-image: none;
+      }
+
+      &--before {
+      background-image: none;
+    }
+  }
+
+  .cat-slider::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/before-tablet@1x.png");
+    width: 313px;
+    height: 515px;
+    position: absolute;
+    left: 71px;
+    background-position: -25px 0;
+    bottom: 116px;
+  }
+
+  .cat-slider::after {
+    content: "";
+    display: inline-block;
+    height: 517px;
+    background-image: url("../img/after-tablet@1x.png");
+    width: 242px;
+    position: absolute;
+    right: 142px;
+    background-position: -339px;
+    bottom: 114px;
+    // transition: width 0.5s;
+  }
+  .cat-slider--before::before {
+    width: 555px;
+    // transition: 0.5s;
+  }
+
+  .cat-slider--before::after {
+    width: 0px;
+    // transition: 0.5s;
+  }
+
+  .cat-slider--after::before {
+    width: 0px;
+    // transition: 0.5s;
+  }
+
+  .cat-slider--after::after {
+    width: 555px;
+    // transition: 0.5s;
+    background-position: center;
+  }
+
+  .cat-slider__button {
+    border: none;
+    background-color: transparent;
+    color: #111111;
+    font-family: $first-font;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+
+    &--after {
+      margin-left: auto;
+    }
+
+    &--before {
+      margin-right: 16px;
+      padding-left: 8px;
+    }
+  }
+
+  .cat-slider__controls {
+    display: flex;
+    justify-content: flex-start;
+    width: 586px;
+    align-items: center;
+    position: relative;
+    bottom: 37px;
+  }
+
+  .cat-slider__indicator {
+    margin-top: 1px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    width: 427px;
+    height: 6px;
+    background-color: #cdcdcd;
+    border: none;
+    justify-content: center;
+    padding: 0 0;
+    position: relative;
+
+    &--after {
+      justify-content: flex-end;
+    }
+
+    &--before {
+      justify-content: flex-start;
+    }
+  }
+
+  .cat-slider__indicator span {
+    background-color: $main-green;
+    box-sizing: content-box;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 0px 1px #cdcdcd;
+    border: 12px solid #ffffff;
+  }
 }
 
 @media (min-width: 1440px) {

@@ -6,7 +6,6 @@
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
-  padding-bottom: 18px;
 }
 
 .how-it-works__list {
@@ -57,11 +56,18 @@
 }
 
 @media (min-width: 768px) {
-    .how-it-works {
+  .how-it-works {
     width: 768px;
     padding-left: 30px;
     padding-right: 30px;
     border-bottom: 1px solid;
+    padding-bottom: 18px;
+  }
+
+  .how-it-works__title {
+    padding-left: 0px;
+    margin-top: 39px;
+    margin-bottom: 67px;
   }
 
   .how-it-works__list {
@@ -69,17 +75,32 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    margin-top: 0;
   }
 
   .how-it-works__item {
     min-height: 228px;
-    width: 50%;
+    width: 324px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    padding-left: 0;
+    margin-bottom: 25px;
+    padding-top: 71px;
   }
 
-    .how-it-works__item--structure p {
+  .how-it-works__item.how-it-works__item--form,
+  .how-it-works__item.how-it-works__item--structure {
+    margin-bottom: 89px;
+  }
+
+  .how-it-works__item::before {
+    width: 80px;
+    height: 80px;
+    top: 1px;
+  }
+
+  .how-it-works__item--structure p {
     width: 203px;
   }
 
@@ -98,6 +119,36 @@
 
   .how-it-works__item--replacement p {
     width: 205px;
+  }
+
+  .how-it-works__item::after {
+    content: "";
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 281px;
+    font-family: $first-font;
+    left: 118px;
+    top: 93px;
+    z-index: -1;
+  }
+
+  .how-it-works__item--structure::after {
+    content: "1";
+  }
+
+  .how-it-works__item--form::after {
+    content: "2";
+    left: 112px;
+  }
+
+  .how-it-works__item--replacement::after {
+    content: "3";
+    left: 114px;
+  }
+
+  .how-it-works__item--enjoy::after {
+    content: "4";
+    left: 114px;
   }
 }
 

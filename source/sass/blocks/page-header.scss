@@ -24,16 +24,24 @@
     flex-direction: row;
     padding-left: 29px;
     padding-right: 31px;
-    margin-bottom: 68px;
+    margin-bottom: 25px;
+    padding-top: 18px;
   }
 
   .page-header__logo {
     width: 174px;
+    height: 59px;
     padding: 0;
+    padding-top: 6px;
   }
 
   .page-header__logo-image {
     width: 174px;
+    height: 59px;
+  }
+
+  .main-nav {
+    margin-left: 77px;
   }
 }
 
@@ -45,3 +53,4 @@
     padding-top: 53px;
   }
 }
+
