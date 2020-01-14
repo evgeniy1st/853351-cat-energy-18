@@ -3,20 +3,18 @@
   margin-left: auto;
   margin-right: auto;
   width: auto;
-
-
-    &__wrap {
-      padding: 0 20px;
-      box-sizing: border-box;
-      justify-content: flex-start;
-      display: flex;
-      flex-direction: column;
-      width: 320px;
-      margin-left: auto;
-      margin-right: auto;
-    }
 }
 
+.example__wrap {
+  padding: 0 20px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .example__description {
   color: $small-text;
@@ -59,19 +57,19 @@
 }
 
 @media (min-width: 768px) {
-    .example {
+  .example {
     background-color: transparent;
     min-height: 1023px;
+  }
 
-      &__wrap {
-        flex-direction: row;
-        padding: 0;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        align-content: unset;
-        width: 768px;
-      }
+  .example__wrap {
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: unset;
+    width: 768px;
   }
 
   .example__title {
@@ -125,13 +123,13 @@
     min-height: 463px;
     display: flex;
     justify-content: center;
+  }
 
-    &__wrap {
-      width: 720px;
-      justify-content: flex-start;
-      position: relative;
-      margin: 0 0;
-    }
+  .example__wrap {
+    width: 720px;
+    justify-content: flex-start;
+    position: relative;
+    margin: 0 0;
   }
 
   .example__title {

@@ -2,14 +2,14 @@
   background-image: url("../img/before-mobile@1x.png");
   background-position: center 22px;
   background-repeat: no-repeat;
+}
 
-    &--after {
-      background-image: url("../img/after-mobile@1x.png");
-    }
+.cat-slider--after {
+  background-image: url("../img/after-mobile@1x.png");
+}
 
-    &--before {
-    background-image: url("../img/before-mobile@1x.png");
-  }
+.cat-slider--before {
+  background-image: url("../img/before-mobile@1x.png");
 }
 
 .cat-slider__button {
@@ -20,15 +20,15 @@
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
+}
 
-  &--after {
-    margin-left: auto;
-  }
+.cat-slider__button--after {
+  margin-left: auto;
+}
 
-  &--before {
-    margin-right: 9px;
-    padding-left: 14px;
-  }
+.cat-slider__button--before {
+  margin-right: 9px;
+  padding-left: 14px;
 }
 
 .cat-slider__controls {
@@ -49,10 +49,10 @@
   align-items: center;
   padding: 0 6px;
   box-sizing: border-box;
+}
 
-  &--after {
-    justify-content: right;
-  }
+.cat-slider__indicator--after {
+  justify-content: right;
 }
 
 .cat-slider__indicator span {
@@ -72,14 +72,14 @@
 
     .cat-slider {
     background-image: none;
+  }
 
-      &--after {
-        background-image: none;
-      }
+  .cat-slider--after {
+    background-image: none;
+  }
 
-      &--before {
-      background-image: none;
-    }
+  .cat-slider--before {
+  background-image: none;
   }
 
   .cat-slider::before {
@@ -131,15 +131,15 @@
     text-transform: uppercase;
     cursor: pointer;
     font-size: 20px;
+  }
 
-    &--after {
-      margin-left: auto;
-    }
+  .cat-slider__button--after {
+    margin-left: auto;
+  }
 
-    &--before {
-      margin-right: 16px;
-      padding-left: 8px;
-    }
+  .cat-slider__button--before {
+    margin-right: 16px;
+    padding-left: 8px;
   }
 
   .cat-slider__controls {
@@ -165,14 +165,14 @@
     justify-content: center;
     padding: 0 0;
     position: relative;
+  }
 
-    &--after {
-      justify-content: flex-end;
-    }
+  .cat-slider__indicator--after {
+    justify-content: flex-end;
+  }
 
-    &--before {
-      justify-content: flex-start;
-    }
+  .cat-slider__indicator--before {
+    justify-content: flex-start;
   }
 
   .cat-slider__indicator span {
