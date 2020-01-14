@@ -6,26 +6,68 @@
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
-  padding-bottom: 42px;
 }
 
 .how-it-works__list {
   list-style: none;
   padding: 0;
+  margin-top: 42px;
 }
 
 .how-it-works__item  {
   font-family: $second-font;
   font-size: 14px;
   color: $small-text;
+  padding-left: 80px;
+  line-height: 17px;
+  margin-bottom: 29px;
+  position: relative;
+}
+
+.how-it-works__item::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  position: absolute;
+  height: 60px;
+  background-color: $main-green;
+  background-position: center;
+  left: 0;
+  top: -4px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.how-it-works__item--structure::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.how-it-works__item--form::before {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.how-it-works__item--replacement::before {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.how-it-works__item--enjoy::before {
+  background-image: url("../img/advantage-clock@1x.png");
 }
 
 @media (min-width: 768px) {
-    .how-it-works {
+  .how-it-works {
     width: 768px;
     padding-left: 30px;
     padding-right: 30px;
     border-bottom: 1px solid;
+    padding-bottom: 18px;
+  }
+
+  .how-it-works__title {
+    padding-left: 0px;
+    margin-top: 39px;
+    margin-bottom: 67px;
   }
 
   .how-it-works__list {
@@ -33,17 +75,32 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    margin-top: 0;
   }
 
   .how-it-works__item {
     min-height: 228px;
-    width: 50%;
+    width: 324px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    padding-left: 0;
+    margin-bottom: 25px;
+    padding-top: 71px;
   }
 
-    .how-it-works__item--structure p {
+  .how-it-works__item.how-it-works__item--form,
+  .how-it-works__item.how-it-works__item--structure {
+    margin-bottom: 89px;
+  }
+
+  .how-it-works__item::before {
+    width: 80px;
+    height: 80px;
+    top: 1px;
+  }
+
+  .how-it-works__item--structure p {
     width: 203px;
   }
 
@@ -63,6 +120,36 @@
   .how-it-works__item--replacement p {
     width: 205px;
   }
+
+  .how-it-works__item::after {
+    content: "";
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 281px;
+    font-family: $first-font;
+    left: 118px;
+    top: 93px;
+    z-index: -1;
+  }
+
+  .how-it-works__item--structure::after {
+    content: "1";
+  }
+
+  .how-it-works__item--form::after {
+    content: "2";
+    left: 112px;
+  }
+
+  .how-it-works__item--replacement::after {
+    content: "3";
+    left: 114px;
+  }
+
+  .how-it-works__item--enjoy::after {
+    content: "4";
+    left: 114px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -72,13 +159,13 @@
     padding-left: 110px;
     padding-right: 110px;
     border: none;
-    margin-bottom: 90px;
+    margin-bottom: 128px;
     padding-bottom: 0;
   }
 
   .how-it-works__title {
     padding: 0;
-    margin-bottom: 89px;
+    margin-bottom: 67px;
     margin-top: 0;
   }
 
@@ -89,5 +176,13 @@
   .how-it-works__list {
     margin: 0;
   }
-}
 
+  .how-it-works__item.how-it-works__item--enjoy {
+    width: 245px;
+    margin-bottom: 89px;
+  }
+
+  .how-it-works__item.how-it-works__item--replacement {
+    margin-bottom: 89px;
+  }
+}

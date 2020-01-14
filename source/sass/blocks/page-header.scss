@@ -9,11 +9,13 @@
   width: 320px;
   flex-direction: column;
   padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .page-header__logo {
   width: 191px;
   padding-left: 20px;
+  padding-top: 2px;
 }
 
 @media (min-width: 768px) {
@@ -22,16 +24,24 @@
     flex-direction: row;
     padding-left: 29px;
     padding-right: 31px;
-    margin-bottom: 68px;
+    margin-bottom: 25px;
+    padding-top: 18px;
   }
 
   .page-header__logo {
     width: 174px;
+    height: 59px;
     padding: 0;
+    padding-top: 6px;
   }
 
   .page-header__logo-image {
     width: 174px;
+    height: 59px;
+  }
+
+  .main-nav {
+    margin-left: 77px;
   }
 }
 
@@ -40,6 +50,16 @@
     width: 1440px;
     padding-left: 109px;
     padding-right: 109px;
-    padding-top: 53px;
+    padding-top: 50px;
+  }
+
+  .page-header__logo {
+    width: 210px;
+    padding-top: 4px;
+  }
+
+  .page-header__logo-image {
+    width: 204px;
+    height: 60px;
   }
 }

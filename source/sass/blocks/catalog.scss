@@ -35,11 +35,11 @@
     padding-left: 38px;
     padding-right: 38px;
     min-height: 431px;
+  }
 
-    &--show-more {
-      border: 1px solid;
-      background-color: transparent;
-    }
+  .catalog__item--show-more {
+    border: 1px solid;
+    background-color: transparent;
   }
 
   .catalog__list {

@@ -28,7 +28,7 @@
 @media (min-width: 768px) {
   .site-list {
     display: flex;
-    width: 468px;
+    width: 475px;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -51,13 +51,19 @@
 @media (min-width: 1440px) {
 
   .site-list {
-  width: 620px;
-  a {
+    width: 612px;
+    justify-content: flex-end;
+    a {
       font-size: 20px;
     }
   }
 
   .site-list__link--white {
     color: #ffffff;
+  }
+
+  .site-list__item {
+    margin-left: 35px;
+    margin-right: 0;
   }
 }
