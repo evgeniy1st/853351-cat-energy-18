@@ -1,5 +1,5 @@
 .promo {
-  padding: 0 20px;
+  padding: 0 0;
   box-sizing: border-box;
   margin-bottom: 35px;
 }
@@ -13,7 +13,10 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 .promo__text {
@@ -23,13 +26,14 @@
   background-repeat: no-repeat;
   color: #ffffff;
   background-size: 56px 61px;
-  background-position: center top;
+  background-position: center 3px;
   text-align: center;
-  width: 159px;
-  min-height: 181px;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 46px;
+  width: 161px;
+  min-height: 185px;
+  margin-bottom: 42px;
+  line-height: 20px;
 }
 
 @media (min-width: 768px) {

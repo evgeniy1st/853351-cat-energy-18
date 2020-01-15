@@ -1,21 +1,53 @@
 .additional-product {
-  width: 100%;
   box-sizing: border-box;
-  padding: 0 20px;
+  width: auto;
+  padding: 0;
+  margin-bottom: 39px;
 }
 
 .additional-product__title {
   font-family: $first-font;
   font-size: 24px;
   font-weight: normal;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  text-align: left;
+  position: relative;
+  width: 320px;
+  box-sizing: border-box;
+  padding-left: 19px;
+  padding-top: 1px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.additional-product__title::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 3px;
+  background-color: $main-green;
+  width: auto;
+  flex-grow: 1;
+  margin-top: 7px;
+  margin-left: 23px;
 }
 
 .additional-product__list {
   list-style: none;
   padding: 0;
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-bottom: 0;
 }
 
 .additional-product__item {
@@ -25,7 +57,7 @@
   align-items: center;
   border-bottom: 1px solid;
   padding-bottom: 17px;
-  padding-top: 14px;
+  padding-top: 10px;
 }
 
 .additional-product__item:first-child {
@@ -35,11 +67,17 @@
 .additional-product__name {
   align-self: flex-start;
   text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  padding-left: 1px;
+  margin-top: 0px;
+  margin-bottom: 9px;
+  line-height: 22px;
 }
 
 .additional-product__table {
   font-family: $second-font;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   color: $small-text;
   width: 100%;
@@ -47,6 +85,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 14px;
+  text-align: left;
+  padding-left: 0px;
     dt {
     width: 50%;
   }
@@ -60,7 +100,12 @@
 
 .additional-product__button {
   width: 100%;
-  padding: 12px 0;
+  line-height: 22px;
+  padding-right: 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 2px;
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {

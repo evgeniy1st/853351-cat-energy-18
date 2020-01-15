@@ -6,9 +6,13 @@
 
 .contacts__wrap {
   box-sizing: border-box;
-  width: 320px;
   margin-left: auto;
   margin-right: auto;
+  width: auto;
+}
+
+.contacts__wrap--grey {
+  background-color: #f2f2f2;
 }
 
 .contacts__text {
@@ -18,6 +22,10 @@
   padding-right: 20px;
   padding-top: 29px;
   padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  box-sizing: border-box;
 }
 
 .contacts__text--white {
