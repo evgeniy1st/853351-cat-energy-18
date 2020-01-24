@@ -17,6 +17,10 @@
 @media (min-width: 768px) {
     .page-title {
     font-size: 60px;
+    padding-top: 10px;
+    padding-left: 30px;
+    width: 768px;
+    border-top: none;
   }
 
   .page-title--form {
@@ -31,5 +35,6 @@
   .page-title {
     padding-left: 110px;
     padding-right: 110px;
+    width: 1440px;
   }
 }

@@ -1,7 +1,7 @@
 .promo {
   padding: 0 0;
   box-sizing: border-box;
-  margin-bottom: 35px;
+  margin-bottom: 0;
 }
 .promo__wrap {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -39,7 +39,8 @@
 @media (min-width: 768px) {
 
   .promo {
-    padding: 0 30px;
+    padding: 0;
+    margin-bottom: 75px;
   }
 
   .promo__wrap {
@@ -48,8 +49,9 @@
     justify-content: flex-end;
     flex-direction: row;
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
-    background-position: 91px center, center;
+    background-position: 90px 64px, center;
     background-size: 56px 61px, auto;
+    width: 708px;
   }
 
   .promo__text {
@@ -59,6 +61,7 @@
     min-height: 60px;
     margin-right: 125px;
     background-image: none;
+    margin-right: 124px;
   }
 }
 
@@ -66,20 +69,22 @@
 
 .promo {
     padding-left: 0;
-    padding-right: 110px;
-    width: 355px;
     display: inline-block;
     min-height: 289px;
-    margin-bottom: 0;
     vertical-align: bottom;
     margin-bottom: 86px;
+    padding-right: 0;
+    width: 245px;
+    margin-bottom: 0;
+    padding-top: 17px;
   }
 
   .promo__wrap {
     min-height: 289px;
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
-    background-position: center 47px, center;
+    background-position: center 63px, center;
     justify-content: center;
+    width: 245px;
   }
 
   .promo__text {

@@ -17,7 +17,7 @@
   display: inline-block;
   width: 30px;
   vertical-align: middle;
-  height: 0px;
+  height: 2px;
   background-color: #cdcdcd;
   position: absolute;
 }
@@ -25,11 +25,12 @@
 .show-more__button::after {
   transform: rotate(90deg);
   left: 145px;
-  bottom: 166px;
+  bottom: 167px;
 }
 
 .show-more__button::before {
   left: 145px;
+  bottom: 167px;
 }
 
 .show-more__text {
@@ -56,7 +57,7 @@
 .show-more__button {
   background-color: transparent;
   border: none;
-  height: 81px;
+  height: 79px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,16 +83,64 @@
 
 @media (min-width: 768px) {
 
-    .show-more__text {
+  .show-more {
+    border-bottom: none;
+  }
+
+  .show-more__text {
     margin-top: 50px;
     width: 178px;
     font-size: 20px;
     margin-bottom: 85px;
 
     span {
-      margin-top: 28px;
+      margin-top: 23px;
       padding-top: 0;
       font-size: 16px;
     }
+  }
+
+  .show-more__button {
+    height: 110px;
+  }
+
+  .show-more__button::before {
+    left: 116px;
+    bottom: 331px;
+  }
+
+  .show-more__button::after,
+  .show-more__button::before {
+    width: 60px;
+  }
+
+  .show-more__button::after {
+    left: 118px;
+    bottom: 332px;
+  }
+
+  .show-more__show-all {
+    width: 251px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .show-more__text {
+    margin-bottom: 84px;
+    line-height: 21px;
+  }
+
+  .show-more__text span {
+    line-height: 20px;
+  }
+
+  .show-more__show-all {
+    width: 169px;
+  }
+
+  .show-more__button::before,
+  .show-more__button::after {
+    left: 80px;
   }
 }

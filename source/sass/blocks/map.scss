@@ -2,10 +2,22 @@
   height: 362px;
 }
 
+.map__image {
+  height: 362px;
+}
+
 @media (min-width: 768px) {
     .map__image {
     width: 100%;
     object-fit: cover;
+  }
+
+  .map {
+    height: 397px;
+  }
+
+  .map__image {
+    height: 397px;
   }
 }
 
