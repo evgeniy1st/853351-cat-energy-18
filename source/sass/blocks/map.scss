@@ -1,9 +1,13 @@
 .map {
   height: 362px;
+  position: relative;
 }
 
 .map__image {
   height: 362px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: 768px) {

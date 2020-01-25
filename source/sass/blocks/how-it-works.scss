@@ -55,6 +55,24 @@
   background-image: url("../img/advantage-clock@1x.png");
 }
 
+@media (min-resolution: 1.5dppx) {
+  .how-it-works__item--structure::before {
+    background-image: url("../img/advantage-leaf@2x.png");
+  }
+
+  .how-it-works__item--form::before {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
+
+  .how-it-works__item--replacement::before {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
+
+  .how-it-works__item--enjoy::before {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
+}
+
 @media (min-width: 768px) {
   .how-it-works {
     width: 768px;
