@@ -8,10 +8,14 @@
     type="text/javascript">
     </script>
   <title>HTML Academy: Кэт энерджи. Подбор программы</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
@@ -114,6 +118,18 @@
       </div>
       <div class="map contacts__map" id="map">
         <picture>
+          <source type="image/webp"
+            media="(min-width: 1440px)"
+            srcset="img/bg-map-desktop@1x.webp 1x,
+                    img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp"
+            media="(min-width: 768px)"
+            srcset="img/bg-map-tablet@1x.webp 1x,
+                    img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/bg-map-mobile@1x.webp 1x,
+                    img/bg-map-mobile@2x.webp 2x">
+
           <source
             media="(min-width: 1440px)"
             srcset="img/bg-map-desktop@1x.png 1x,

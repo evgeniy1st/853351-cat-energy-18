@@ -402,4 +402,12 @@
   .fieldset--contacts .fieldset__legend--green-line {
     margin-bottom: 82px;
   }
+
+  .fieldset__input--contacts[name*="email"] {
+    background-position: 448px 18px;
+  }
+
+  .fieldset__input--contacts[name*="phone"] {
+    background-position: 430px 16px;
+  }
 }

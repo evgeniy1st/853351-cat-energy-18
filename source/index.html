@@ -6,9 +6,14 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=1657ccbe-52b7-475f-878f-55a3fee624cc&lang=ru_RU" type="text/javascript">
     </script>
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+
+
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header">
       <a class="page-header__logo">
@@ -131,6 +136,18 @@
         </div>
         <div class="map contacts__map" id="map">
           <picture>
+            <source type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="img/bg-map-desktop@1x.webp 1x,
+                      img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp"
+              media="(min-width: 768px)"
+              srcset="img/bg-map-tablet@1x.webp 1x,
+                      img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/bg-map-mobile@1x.webp 1x,
+                      img/bg-map-mobile@2x.webp 2x">
+
             <source
               media="(min-width: 1440px)"
               srcset="img/bg-map-desktop@1x.png 1x,
@@ -139,7 +156,8 @@
               media="(min-width: 768px)"
               srcset="img/bg-map-tablet@1x.png 1x,
                       img/bg-map-tablet@2x.png 2x">
-            <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+              alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
         </div>
       </section>
