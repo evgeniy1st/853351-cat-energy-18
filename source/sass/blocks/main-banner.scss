@@ -14,6 +14,12 @@
   padding-bottom: 6px;
 }
 
+@media (min-resolution: 1.5dppx) {
+    .main-banner {
+      background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
+    }
+  }
+
 .main-banner__title {
   font-size: 36px;
   text-align: center;
@@ -42,16 +48,22 @@ padding-bottom: 12px;
 @media (min-width: 768px) {
 
   .main-banner {
-    background-image: url("../img/index-can-mobile@1x.png");
+    background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 110px 215px;
-    background-size: 628px 606px;
+    background-position: 28px 216px;
+    background-size: 710px auto;
     min-height: 809px;
     width: 768px;
     color: #000000;
     justify-content: flex-start;
     padding-left: 117px;
     box-sizing: border-box;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .main-banner {
+      background-image: url("../img/index-can-tablet@1x.jpg");
+    }
   }
 
   .main-banner__title {
@@ -91,7 +103,7 @@ padding-bottom: 12px;
     background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-size: 552px 499px, 720px auto;
     background-position: 560px 175px, 719px 33px;
-    margin-top: -190px;
+    margin-top: -205px;
     min-height: 729px;
     margin-bottom: 80px;
   }
@@ -109,5 +121,11 @@ padding-bottom: 12px;
   .main-banner__button {
     margin-left: 73px;
     margin-top: 5px;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .main-banner {
+      background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }

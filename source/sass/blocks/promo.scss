@@ -1,7 +1,7 @@
 .promo {
-  padding: 0 20px;
+  padding: 0 0;
   box-sizing: border-box;
-  margin-bottom: 35px;
+  margin-bottom: 0;
 }
 .promo__wrap {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -13,7 +13,17 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media (min-resolution: 1.5dppx) {
+  .promo__wrap {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 283px auto;
+  }
 }
 
 .promo__text {
@@ -23,19 +33,21 @@
   background-repeat: no-repeat;
   color: #ffffff;
   background-size: 56px 61px;
-  background-position: center top;
+  background-position: center 3px;
   text-align: center;
-  width: 159px;
-  min-height: 181px;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 46px;
+  width: 161px;
+  min-height: 185px;
+  margin-bottom: 42px;
+  line-height: 20px;
 }
 
 @media (min-width: 768px) {
 
   .promo {
-    padding: 0 30px;
+    padding: 0;
+    margin-bottom: 75px;
   }
 
   .promo__wrap {
@@ -44,8 +56,16 @@
     justify-content: flex-end;
     flex-direction: row;
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
-    background-position: 91px center, center;
+    background-position: 90px 64px, center;
     background-size: 56px 61px, auto;
+    width: 708px;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .promo__wrap {
+      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 56px 61px, 711px auto;
+    }
   }
 
   .promo__text {
@@ -55,6 +75,7 @@
     min-height: 60px;
     margin-right: 125px;
     background-image: none;
+    margin-right: 124px;
   }
 }
 
@@ -62,20 +83,29 @@
 
 .promo {
     padding-left: 0;
-    padding-right: 110px;
-    width: 355px;
     display: inline-block;
     min-height: 289px;
-    margin-bottom: 0;
     vertical-align: bottom;
     margin-bottom: 86px;
+    padding-right: 0;
+    width: 245px;
+    margin-bottom: 0;
+    padding-top: 17px;
   }
 
   .promo__wrap {
     min-height: 289px;
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
-    background-position: center 47px, center;
+    background-position: center 63px, center;
     justify-content: center;
+    width: 245px;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .promo__wrap {
+      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 56px 61px, 711px auto;
+    }
   }
 
   .promo__text {

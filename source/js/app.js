@@ -48,3 +48,29 @@ if (document.querySelector('.cat-slider')) {
     }
   })
 }
+
+
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+    center: [59.9387165, 30.3230474],
+    zoom: 17,
+    controls: []
+  }),
+
+    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    ),
+
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'ул. Большая Конюшенная, д. 19/8 Санкт-Петербург',
+      balloonContent: 'Ждём по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург'
+    }, {
+      iconLayout: 'default#image',
+      iconImageHref: '../img/map-pin.png',
+      iconImageSize: [55, 53],
+      iconImageOffset: [-5, -38]
+    })
+
+  myMap.geoObjects
+    .add(myPlacemark)
+});
