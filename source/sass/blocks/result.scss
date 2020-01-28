@@ -2,7 +2,7 @@
   font-size: 22px;
   font-weight: normal;
   color: #111111;
-  border: 1px solid $small-text;
+  border: 1px solid #cdcdcd;
   text-transform: uppercase;
   box-sizing: border-box;
   width: 100%;
@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
 
   .result__text {
     background-color: #f2f2f2;

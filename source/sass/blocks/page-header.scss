@@ -18,6 +18,21 @@
   padding-top: 2px;
 }
 
+@media (max-width: 767px) {
+  .page-header {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-header__logo {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 89px;
+  }
+}
+
 @media (min-width: 768px) {
   .page-header{
     width: 768px;
@@ -45,11 +60,11 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .page-header {
-    width: 1440px;
-    padding-left: 109px;
-    padding-right: 109px;
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 50px;
     margin-bottom: 41px;
   }

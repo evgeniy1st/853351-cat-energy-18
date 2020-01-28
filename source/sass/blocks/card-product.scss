@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: 48px;
-    dt {
+  dt {
     width: 50%;
   }
 
@@ -83,11 +83,11 @@
     line-height: 21px;
 
       dt {
-      border-bottom: 1px solid;
+      border-bottom: 1px solid #cdcdcd;
       padding: 5px 0;
     }
       dd {
-      border-bottom: 1px solid;
+      border-bottom: 1px solid #cdcdcd;
       padding: 5px 0;
     }
   }
@@ -108,7 +108,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
 
   .card-product:nth-child(odd) {
     margin-right: 80px;

@@ -24,6 +24,13 @@
 .page-footer__logo {
   text-align: center;
   margin-bottom: 29px;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__developer-link {
@@ -34,19 +41,23 @@
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: space-between;
+  width: 286px;
 }
 
-.page-footer__developer-link::after {
-  content: "";
+.page-footer__developer-logo {
   width: 40px;
-  height: 40px;
-  vertical-align: middle;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: -10px;
-  right: -6px;
+  height: auto;
+  fill: #666666;
+}
+
+.page-footer__developer-link:hover svg {
+  fill: #68b738;
+}
+
+.page-footer__developer-link:active svg,
+.page-footer__developer-link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -79,13 +90,9 @@
     width: 164px;
     padding-top: 23px;
   }
-
-  .page-footer__developer-link::after {
-    top: 14px;
-  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .page-footer {
     padding-top: 0;
     padding-left: 0;
@@ -93,8 +100,8 @@
   }
 
   .page-footer__wrap {
-    width: 1440px;
-    padding: 0 110px;
+    width: 1300px;
+    padding: 0 40px;
     padding-top: 4px;
   }
 }

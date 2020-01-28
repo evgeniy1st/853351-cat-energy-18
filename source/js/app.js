@@ -3,7 +3,8 @@ var mainNavigationList = mainNavigation.querySelector('.main-nav__list');
 var mainNavigationToggle = mainNavigation.querySelector('.main-nav__toggle');
 
 mainNavigationList.classList.add('main-nav__list--close');
-mainNavigationToggle.classList.add('main-nav__toggle--close')
+mainNavigationToggle.classList.add('main-nav__toggle--close');
+mainNavigationToggle.classList.remove('main-nav__toggle--no-js');
 
 mainNavigationToggle.addEventListener('click', function(event) {
   event.preventDefault();

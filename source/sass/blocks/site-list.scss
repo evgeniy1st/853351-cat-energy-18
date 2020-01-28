@@ -21,8 +21,14 @@
   border-top: 1px solid rgba(0,0,0,0.2)
 }
 
-.site-list__item:last-child {
-  border-bottom: 1px solid rgba(0,0,0,0.2)
+@media (max-width: 767px) {
+  .site-list__item {
+    width: 100%;
+  }
+
+  .site-list__item:last-child {
+    padding-bottom: 16px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -48,7 +54,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
 
   .site-list {
     width: 612px;

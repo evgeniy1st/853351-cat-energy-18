@@ -78,7 +78,6 @@
     width: 768px;
     padding-left: 30px;
     padding-right: 30px;
-    border-bottom: 1px solid;
     padding-bottom: 18px;
   }
 
@@ -170,12 +169,12 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
 
   .how-it-works {
-    width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
     border: none;
     margin-bottom: 128px;
     padding-bottom: 0;
