@@ -78,7 +78,7 @@
 .preview-catalog__description {
   font-family: $second-font;
   color: $small-text;
-  border-bottom: 1px solid $small-text;
+  border-bottom: 1px solid #cdcdcd;
   padding-bottom: 21px;
   margin: 0;
   font-size: 14px;
@@ -189,10 +189,10 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
 
   .preview-catalog {
-    width: 1440px;
+    width: 1300px;
     margin-bottom: 37px;
   }
 
@@ -242,7 +242,7 @@
   .preview-catalog__list {
     margin: 0;
     width: 100%;
-    padding: 0 110px;
+    padding: 0 40px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;

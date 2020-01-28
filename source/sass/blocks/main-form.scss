@@ -1,5 +1,5 @@
 .main-form {
-  width: 320px;
+  width: auto;
   box-sizing: border-box;
 }
 
@@ -13,6 +13,9 @@
   padding-right: 20px;
   width: 300px;
   box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
 }
 
 .main-form__wrap small {
@@ -26,7 +29,9 @@
   padding-bottom: 34px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100%;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
   flex-direction: column;
   min-height: 109px;
@@ -45,28 +50,37 @@
 @media (min-width: 768px) {
 
   .main-form {
-    width: 768px;
-    padding: 0 70px;
+    padding: 0;
     margin-bottom: 51px;
   }
 
   .main-form__title {
     margin-top: 0;
     font-size: 20px;
-    width: 525px;
     margin-bottom: 67px;
     line-height: 29px;
-    padding: 0 69px;
     box-sizing: border-box;
+    width: 768px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 70px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-form__title span {
+    width: 376px;
   }
 
   .main-form__wrap {
     flex-direction: row;
     min-height: 78px;
     justify-content: flex-start;
-    padding-left: 0;
+    padding-left: 69px;
     padding-right: 0;
     padding-bottom: 0;
+    width: 768px;
   }
 
   .main-form__button {
@@ -84,28 +98,42 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .main-form {
-    width: 1440px;
-    padding: 0 110px;
+    padding: 0;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 61px;
   }
 
   .main-form__wrap {
-    width: 830px;
-    justify-content: space-between;
+    width: 1300px;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 0 40px;
   }
 
   .main-form__button {
     width: 569px;
-    margin-right: 0;
+    margin-right: 82px;
     padding-left: 4px;
   }
 
   .main-form__title {
-    width: 605px;
-    padding: 0 110px;
+    width: 1300px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .main-form__title span {
+    width: 376px;
+    padding-left: 41px;
   }
 }
