@@ -15,6 +15,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var cheerio = require('gulp-cheerio');
 
 
 gulp.task("css", function () {
@@ -57,6 +58,12 @@ gulp.task("sprite", function () {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
+    .pipe(cheerio({
+      run: function ($) {
+        $('svg').attr('style', 'display:none');
+      },
+      parserOptions: { xmlMode: true }
+    }))
     .pipe(gulp.dest("build/img"))
 });
 
