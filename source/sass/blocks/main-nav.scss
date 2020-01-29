@@ -33,7 +33,6 @@
 }
 
 @media (max-width: 767px) {
-
   .main-nav {
     margin-left: auto;
     margin-right: auto;
@@ -46,12 +45,15 @@
 }
 
 @media (min-width: 768px) {
+  .main-nav {
+    margin-left: 77px;
+  }
 
-    .main-nav__toggle {
+  .main-nav__toggle {
     display: none;
   }
 
-    .main-nav__list--close {
+  .main-nav__list--close {
     display: flex;
   }
 }

@@ -7,18 +7,16 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=1657ccbe-52b7-475f-878f-55a3fee624cc&lang=ru_RU"
     type="text/javascript">
     </script>
-    <script>
-      document.createElement("picture");
-    </script>
-    <script src="js/picturefill.js" async></script>
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async></script>
   <title>HTML Academy: Кэт энерджи. Подбор программы</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <div style="display: none;">
-    <include src="build/img/sprite.svg"></include>
-  </div>
+  <include src="build/img/sprite.svg"></include>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <picture>
@@ -29,7 +27,8 @@
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--no-js" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle main-nav__toggle--no-js" type="button"><span class="visually-hidden">Открыть
+          меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
         <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
@@ -39,84 +38,89 @@
   </header>
 
   <main class="page-main">
-      <h1 class="page-title page-title--form">Подбор программы</h1>
-      <form class="main-form" action="https://echo.htmlacademy.ru" method="POST">
-        <h2 class="main-form__title"><span>Заполните анкету и мы подберем программу питания для вашего кота</span></h2>
-        <div class="fieldset-group">
-          <div class="main-form__fieldset fieldset fieldset--basic">
-            <h3 class="visually-hidden">Базовая информация о питомце</h3>
-            <label class="fieldset__label" for="cat-name">
-              <span>Имя:*</span>
-              <input class="fieldset__input" type="text" id="cat-name" placeholder="Барсик" name="cat-name" required>
+    <h1 class="page-title page-title--form">Подбор программы</h1>
+    <form class="main-form" action="https://echo.htmlacademy.ru" method="POST">
+      <h2 class="main-form__title"><span>Заполните анкету и мы подберем программу питания для вашего кота</span></h2>
+      <div class="fieldset-group">
+        <div class="main-form__fieldset fieldset fieldset--basic">
+          <h3 class="visually-hidden">Базовая информация о питомце</h3>
+          <label class="fieldset__label" for="cat-name">
+            <span>Имя:*</span>
+            <input class="fieldset__input" type="text" id="cat-name" placeholder="Барсик" name="cat-name" required>
+          </label>
+          <label class="fieldset__label" for="cat-weight">
+            <span>Вес (кг):*</span>
+            <input class="fieldset__input" type="text" id="cat-weight" placeholder="7" name="cat-weight" required>
+          </label>
+          <label class="fieldset__label" for="cat-age">
+            <span>Возраст (лет):</span>
+            <input class="fieldset__input" type="text" id="cat-age" placeholder="7" name="cat-age">
+          </label>
+        </div>
+
+        <div class="main-form__fieldset fieldset fieldset--target">
+          <h3 class="visually-hidden">Цель подбора программы</h3>
+          <input class="fieldset__radio visually-hidden" type="radio" id="losing-weight" name="target"
+            value="losing-weight" checked>
+          <label class="fieldset__label fieldset__label--radio" for="losing-weight">Похудение</label>
+          <input class="fieldset__radio visually-hidden" type="radio" id="mass-gain" name="target" value="mass-gain">
+          <label class="fieldset__label fieldset__label--radio" for="mass-gain">Набор массы</label>
+          <input class="fieldset__radio visually-hidden" type="radio" id="unknow" name="target" value="unknow">
+          <label class="fieldset__label fieldset__label--radio" for="unknow">Не знаю (Нужен ваш совет)</label>
+        </div>
+      </div>
+
+      <div class="main-form__fieldset fieldset fieldset--contacts">
+        <div class="fieldset__wrap fieldset__wrap--contacts">
+          <h3 class="fieldset__legend fieldset__legend--green-line">
+            Контактные данные (владельца кота)
+          </h3>
+          <div class="fieldset__label-wrap fieldset__label-wrap--contacts">
+            <label class="fieldset__label fieldset__label--contacts" for="input-email">
+              <span>E-mail:*</span>
+              <input class="fieldset__input fieldset__input--contacts" type="email" id="input-email"
+                placeholder="kuklachev@gmail.com" name="input-email" required>
             </label>
-            <label class="fieldset__label" for="cat-weight">
-              <span>Вес (кг):*</span>
-              <input class="fieldset__input" type="text" id="cat-weight" placeholder="7" name="cat-weight" required>
-            </label>
-            <label class="fieldset__label" for="cat-age">
-              <span>Возраст (лет):</span>
-              <input class="fieldset__input" type="text" id="cat-age" placeholder="7" name="cat-age">
+            <label class="fieldset__label fieldset__label--contacts" for="input-phone">
+              <span>Телефон:*</span>
+              <input class="fieldset__input fieldset__input--contacts" type="tel" id="input-phone"
+                placeholder="8 (960) 900-60-90" name="input-phone" required>
             </label>
           </div>
+        </div>
+      </div>
 
-          <div class="main-form__fieldset fieldset fieldset--target">
-            <h3 class="visually-hidden">Цель подбора программы</h3>
-            <input class="fieldset__radio visually-hidden" type="radio" id="losing-weight" name="target" value="losing-weight" checked>
-            <label class="fieldset__label fieldset__label--radio" for="losing-weight">Похудение</label>
-            <input class="fieldset__radio visually-hidden" type="radio" id="mass-gain" name="target" value="mass-gain">
-            <label class="fieldset__label fieldset__label--radio" for="mass-gain">Набор массы</label>
-            <input class="fieldset__radio visually-hidden" type="radio" id="unknow" name="target" value="unknow">
-            <label class="fieldset__label fieldset__label--radio" for="unknow">Не знаю (Нужен ваш совет)</label>
+      <div class="main-form__fieldset fieldset fieldset--comment">
+        <div class="fieldset__wrap fieldset__wrap--comment">
+          <h3 class="fieldset__legend fieldset__legend--green-line">
+            Комментарий
+          </h3>
+          <textarea class="fieldset__input fieldset__input--comment" id="input-comment"
+            placeholder="Расскажите обо всех повадках кота" name="input-comment"></textarea>
+        </div>
+      </div>
+
+      <div class="main-form__fieldset fieldset fieldset--additionally">
+        <div class="fieldset__wrap fieldset__wrap--additionally">
+          <h3 class="fieldset__legend fieldset__legend--green-line">Дополнительно</h3>
+          <div class="fieldset__label-wrap fieldset__label-wrap--additionally">
+            <input class="fieldset__checkbox visually-hidden" type="checkbox" id="input-sweetener" name="sweetener"
+              checked>
+            <label class="fieldset__label fieldset__label--checkbox" for="input-sweetener">Сахарозаменитель</label>
+            <input class="fieldset__checkbox visually-hidden" type="checkbox" id="input-water" name="water">
+            <label class="fieldset__label fieldset__label--checkbox" for="input-water">Питьевая вода</label>
+            <input class="fieldset__checkbox visually-hidden" type="checkbox" id="input-milk" name="milk">
+            <label class="fieldset__label fieldset__label--checkbox" for="input-milk">Молоко</label>
+            <input class="fieldset__checkbox visually-hidden" type="checkbox" id="input-vitamins" name="vitamins">
+            <label class="fieldset__label fieldset__label--checkbox" for="input-vitamins">Витамины</label>
           </div>
         </div>
-
-        <div class="main-form__fieldset fieldset fieldset--contacts">
-          <div class="fieldset__wrap fieldset__wrap--contacts">
-            <h3 class="fieldset__legend fieldset__legend--green-line">
-              Контактные данные (владельца кота)
-            </h3>
-            <div class="fieldset__label-wrap fieldset__label-wrap--contacts">
-              <label class="fieldset__label fieldset__label--contacts" for="input-email">
-                <span>E-mail:*</span>
-                <input class="fieldset__input fieldset__input--contacts" type="email" id="input-email" placeholder="kuklachev@gmail.com" name="input-email" required>
-              </label>
-              <label class="fieldset__label fieldset__label--contacts" for="input-phone">
-                <span>Телефон:*</span>
-                <input class="fieldset__input fieldset__input--contacts" type="tel" id="input-phone" placeholder="8 (960) 900-60-90" name="input-phone" required>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="main-form__fieldset fieldset fieldset--comment">
-          <div class="fieldset__wrap fieldset__wrap--comment">
-            <h3 class="fieldset__legend fieldset__legend--green-line">
-              Комментарий
-            </h3>
-            <textarea class="fieldset__input fieldset__input--comment" id="input-comment" placeholder="Расскажите обо всех повадках кота" name="input-comment"></textarea>
-          </div>
-        </div>
-
-        <div class="main-form__fieldset fieldset fieldset--additionally">
-          <div class="fieldset__wrap fieldset__wrap--additionally">
-            <h3 class="fieldset__legend fieldset__legend--green-line">Дополнительно</h3>
-            <div class="fieldset__label-wrap fieldset__label-wrap--additionally">
-              <input class="fieldset__checkbox visually-hidden" type="checkbox" id="input-sweetener" name="sweetener" checked>
-              <label class="fieldset__label fieldset__label--checkbox" for="input-sweetener">Сахарозаменитель</label>
-              <input class="fieldset__checkbox visually-hidden" type="checkbox" id="input-water" name="water">
-              <label class="fieldset__label fieldset__label--checkbox" for="input-water">Питьевая вода</label>
-              <input class="fieldset__checkbox visually-hidden" type="checkbox" id="input-milk" name="milk">
-              <label class="fieldset__label fieldset__label--checkbox" for="input-milk">Молоко</label>
-              <input class="fieldset__checkbox visually-hidden" type="checkbox" id="input-vitamins" name="vitamins">
-              <label class="fieldset__label fieldset__label--checkbox" for="input-vitamins">Витамины</label>
-            </div>
-          </div>
-        </div>
-        <div class="main-form__wrap">
-          <button class="main-form__button button">Отправить заявку</button>
-          <small>* — Обязательные поля</small>
-        </div>
-      </form>
+      </div>
+      <div class="main-form__wrap">
+        <button class="main-form__button button">Отправить заявку</button>
+        <small>* — Обязательные поля</small>
+      </div>
+    </form>
 
     <section class="contacts">
       <div class="contacts__wrap contacts__wrap--grey">
@@ -130,25 +134,16 @@
       </div>
       <div class="map contacts__map" id="map">
         <picture>
-          <source type="image/webp"
-            media="(min-width: 1300px)"
-            srcset="img/bg-map-desktop@1x.webp 1x,
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x,
                     img/bg-map-desktop@2x.webp 2x">
-          <source type="image/webp"
-            media="(min-width: 768px)"
-            srcset="img/bg-map-tablet@1x.webp 1x,
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x,
                     img/bg-map-tablet@2x.webp 2x">
-          <source type="image/webp"
-            srcset="img/bg-map-mobile@1x.webp 1x,
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x,
                     img/bg-map-mobile@2x.webp 2x">
 
-          <source
-            media="(min-width: 1300px)"
-            srcset="img/bg-map-desktop@1x.png 1x,
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x,
                     img/bg-map-desktop@2x.png 2x">
-          <source
-            media="(min-width: 768px)"
-            srcset="img/bg-map-tablet@1x.png 1x,
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x,
                     img/bg-map-tablet@2x.png 2x">
           <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
             alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">

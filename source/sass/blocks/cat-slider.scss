@@ -29,7 +29,7 @@
 }
 
 .cat-slider__button:active {
-  border: none;
+  border-color: transparent;
 }
 
 .cat-slider__button--after {
@@ -79,21 +79,21 @@
 }
 
 @media (min-resolution: 1.5dppx) {
-    .cat-slider {
-      background-image: url("../img/before-mobile@2x.png");
-      background-size: 320px auto;
-    }
-
-    .cat-slider--after {
-      background-image: url("../img/after-mobile@2x.png");
-      background-size: 320px auto;
-    }
-
-    .cat-slider--before {
-      background-image: url("../img/before-mobile@2x.png");
-      background-size: 320px auto;
-    }
+  .cat-slider {
+    background-image: url("../img/before-mobile@2x.png");
+    background-size: 320px auto;
   }
+
+  .cat-slider--after {
+    background-image: url("../img/after-mobile@2x.png");
+    background-size: 320px auto;
+  }
+
+  .cat-slider--before {
+    background-image: url("../img/before-mobile@2x.png");
+    background-size: 320px auto;
+  }
+}
 
 @media (min-width: 768px) {
   .cat-slider {
@@ -105,7 +105,7 @@
   }
 
   .cat-slider--before {
-  background-image: none;
+    background-image: none;
   }
 
   .cat-slider::before {
@@ -147,16 +147,17 @@
       background-repeat: no-repeat;
     }
   }
+
   .cat-slider--before::before {
     width: 555px;
   }
 
   .cat-slider--before::after {
-    width: 0px;
+    width: 0;
   }
 
   .cat-slider--after::before {
-    width: 0px;
+    width: 0;
   }
 
   .cat-slider--after::after {
@@ -165,23 +166,25 @@
   }
 
   .cat-slider__button {
-    border: none;
+    // border: none;
     background-color: transparent;
     color: #111111;
     font-family: $first-font;
-    font-size: 16px;
     text-transform: uppercase;
     cursor: pointer;
     font-size: 20px;
+    padding-bottom: 4px;
   }
 
-  .cat-slider__button--after {
-    margin-left: auto;
-  }
+  // .cat-slider__button--after {
+  //   margin-left: auto;
+  // }
 
   .cat-slider__button--before {
     margin-right: 16px;
-    padding-left: 8px;
+    margin-left: 7px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .cat-slider__controls {
@@ -224,42 +227,45 @@
     height: 8px;
     border-radius: 50%;
     position: absolute;
-    box-shadow: 0px 0px 0px 1px #cdcdcd;
+    box-shadow: 0 0 0 1px #cdcdcd;
     border: 12px solid #ffffff;
   }
 
   .cat-slider__button--after {
     margin-right: 7px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .cat-slider__indicator span:hover {
-    box-shadow: 0 0 0 1px rgb(205, 205, 205), 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 0 1px #cdcdcd, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   }
 
   .cat-slider__indicator span:active {
-    box-shadow: 0 0 0 1px #68b738, 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 0 1px #68b738, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   }
 
-  .cat-slider__button {
-    // border-bottom: 1px dotted #cdcdcd;
-    padding-bottom: 4px;
-  }
-  .cat-slider__button--before {
-    margin-left: 7px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .cat-slider__button--after {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  // .cat-slider__button {
+  //   // border-bottom: 1px dotted #cdcdcd;
+  //   padding-bottom: 4px;
+  // }
+
+  // .cat-slider__button--before {
+  //   margin-left: 7px;
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
+
+  // .cat-slider__button--after {
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
 }
 
 @media (min-width: 1300px) {
-
   .cat-slider__controls {
     display: flex;
-    width: 564px;
+    width: 577px;
     justify-content: space-between;
     padding-left: 2px;
   }
@@ -272,9 +278,14 @@
     bottom: 119px;
   }
 
+  .cat-slider__button--after {
+    margin-right: 0;
+    margin-left: 11px;
+  }
+
   @media (min-resolution: 1.5dppx) {
     .cat-slider::before {
-    background-image: url("../img/before-desktop@2x.png");
+      background-image: url("../img/before-desktop@2x.png");
     }
   }
 
@@ -286,9 +297,10 @@
     background-position: 325px;
   }
 
-@media (min-resolution: 1.5dppx) {
+  @media (min-resolution: 1.5dppx) {
     .cat-slider::after {
-    background-image: url("../img/after-desktop@2x.png");
+      background-image: url("../img/after-desktop@2x.png");
+      background-position: -365px;
     }
   }
 
@@ -297,11 +309,11 @@
   }
 
   .cat-slider--before::after {
-    width: 0px;
+    width: 0;
   }
 
   .cat-slider--after::before {
-    width: 0px;
+    width: 0;
   }
 
   .cat-slider--after::after {

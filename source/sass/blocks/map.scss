@@ -11,22 +11,19 @@
 }
 
 @media (min-width: 768px) {
-    .map__image {
+  .map__image {
     width: 100%;
     object-fit: cover;
-  }
-
-  .map {
     height: 397px;
   }
 
-  .map__image {
+  .map {
     height: 397px;
   }
 }
 
 @media (min-width: 1300px) {
   .map {
-  height: 400px;
-}
+    height: 400px;
+  }
 }

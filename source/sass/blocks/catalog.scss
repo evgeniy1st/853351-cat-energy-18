@@ -10,12 +10,13 @@
   justify-content: center;
   margin-bottom: 0;
 }
+
 .catalog__item {
   width: 100%;
   border-top: 1px solid #cdcdcd;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 0px;
+  padding-top: 0;
   padding-bottom: 24px;
   display: flex;
   flex-direction: column;
@@ -24,10 +25,10 @@
 }
 
 @media (max-width: 767px) {
-
   .catalog {
     margin-bottom: 31px;
   }
+
   .catalog__list {
     width: 100%;
   }
@@ -53,7 +54,6 @@
 }
 
 @media (min-width: 768px) {
-
   .catalog {
     padding-top: 139px;
     margin-left: auto;
@@ -111,7 +111,7 @@
     margin-bottom: 16px;
   }
 
-.catalog__list {
+  .catalog__list {
     justify-content: flex-start;
     padding-left: 40px;
     padding-right: 40px;
