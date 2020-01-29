@@ -92,6 +92,11 @@
   background-color: $main-green;
 }
 
+.fieldset__radio:focus + .fieldset__label--radio::before,
+.fieldset__checkbox:focus + .fieldset__label--checkbox::before {
+  outline: 1px solid;
+}
+
 .fieldset__label--checkbox::before {
   content: "";
   display: inline-block;
