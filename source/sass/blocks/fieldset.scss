@@ -92,6 +92,11 @@
   background-color: $main-green;
 }
 
+.fieldset__radio:focus + .fieldset__label--radio::before,
+.fieldset__checkbox:focus + .fieldset__label--checkbox::before {
+  outline: 1px solid;
+}
+
 .fieldset__label--checkbox::before {
   content: "";
   display: inline-block;
@@ -286,6 +291,19 @@
   box-shadow: inset 0 0 0 1px #ff8282;
 }
 
+.fieldset--basic .fieldset__input {
+  margin-bottom: 0;
+}
+
+.fieldset__label-wrap--contacts .fieldset__input--contacts {
+  margin-bottom: 0;
+}
+
+.fieldset__label-wrap--contacts .fieldset__label--contacts,
+.fieldset--basic .fieldset__label {
+  align-items: center;
+}
+
 @media (max-width: 767px) {
   .fieldset__wrap--contacts .fieldset__legend--green-line {
     width: 200px;
@@ -329,6 +347,24 @@
 
   .fieldset__label--contacts span {
     margin-right: 11px;
+  }
+
+  .fieldset--basic .fieldset__label {
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .fieldset--target .fieldset__label--radio {
+    margin-bottom: 13px;
+  }
+
+  .fieldset--target {
+    padding-top: 28px;
+    padding-bottom: 7px;
+  }
+
+  .fieldset__label-wrap--contacts .fieldset__label--contacts {
+    margin-bottom: 15px;
   }
 }
 
@@ -517,6 +553,20 @@
     z-index: -1;
     position: relative;
     margin-top: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1299px) {
+  .fieldset__label-wrap--contacts .fieldset__label--contacts {
+    margin-bottom: 19px;
+  }
+
+  .fieldset--basic .fieldset__label {
+    margin-bottom: 20px;
+  }
+
+  .fieldset--basic {
+    margin-bottom: 53px;
   }
 }
 
