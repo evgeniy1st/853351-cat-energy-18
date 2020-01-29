@@ -1,14 +1,15 @@
 @font-face {
-    font-family: "Oswald";
-    font-weight: medium;
-    src: url("../fonts/oswaldmedium.woff2") format('woff2'),
-		     url("../fonts/oswaldmedium.woff") format('woff');
+  font-family: "Oswald";
+  font-weight: medium;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
 }
+
 @font-face {
-    font-family:"Oswald";
-    font-weight: normal;
-	  src: url("../fonts/oswaldregular.woff") format('woff'),
-		     url("../fonts/oswaldregular.woff2") format('woff2');
+  font-family: "Oswald";
+  font-weight: normal;
+  src: url("../fonts/oswaldregular.woff") format("woff"),
+    url("../fonts/oswaldregular.woff2") format("woff2");
 }
 
 body {
@@ -19,11 +20,10 @@ body {
 }
 
 .visually-hidden {
-	position: absolute;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0;
-	border:0;
-	height: 1px;
-	width: 1px;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
 }

@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .result__text {
   font-family: $second-font;
   font-size: 12px;
@@ -33,7 +34,7 @@
 }
 
 @media (min-width: 768px) {
-    .result__wrap {
+  .result__wrap {
     width: 162px;
     min-height: 72px;
   }

@@ -45,11 +45,15 @@
   align-items: baseline;
 
   span {
-    margin-right: 12px;
+    margin-right: 14px;
     display: flex;
     flex-wrap: nowrap;
     flex-shrink: 0;
   }
+}
+
+.fieldset__label[for="cat-weight"] span {
+  margin-right: 18px;
 }
 
 .fieldset--basic .fieldset__label {
@@ -133,8 +137,8 @@
   box-sizing: border-box;
   height: 45px;
   margin-bottom: 15px;
-  padding: 0 15px;
-  max-width: 81%;
+  padding: 0 13px;
+  max-width: 82%;
   min-width: 70px;
 }
 
@@ -316,6 +320,19 @@
     padding-right: 23px;
     margin-bottom: 34px;
   }
+
+  .fieldset__input--comment {
+    padding-top: 13px;
+    padding-right: 12px;
+  }
+
+  .fieldset__label-wrap.fieldset__label-wrap--contacts {
+    width: 280px;
+  }
+
+  .fieldset__label--contacts span {
+    margin-right: 11px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -334,6 +351,10 @@
     padding-top: 29px;
     padding-left: 50px;
     flex-direction: column;
+  }
+
+  .fieldset__input::placeholder {
+    font-size: 20px;
   }
 
   .fieldset-group {
@@ -418,20 +439,25 @@
     max-width: 567px;
     height: 52px;
     margin-bottom: 19px;
+    padding-left: 18px;
   }
 
   .fieldset__input--contacts[name*="email"] {
     background-position: 513px 18px;
+    padding-left: 22px;
   }
 
   .fieldset__input--contacts[name*="phone"] {
     background-position: 492px 16px;
+    padding-left: 16px;
   }
 
   .fieldset__input--comment {
     max-width: 631px;
     margin-top: 0;
     min-height: 174px;
+    padding-top: 13px;
+    padding-left: 20px;
   }
 
   .fieldset__label {

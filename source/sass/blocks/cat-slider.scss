@@ -29,7 +29,7 @@
 }
 
 .cat-slider__button:active {
-  border: none;
+  border-color: transparent;
 }
 
 .cat-slider__button--after {
@@ -165,7 +165,7 @@
   }
 
   .cat-slider__button {
-    border: none;
+    // border: none;
     background-color: transparent;
     color: #111111;
     font-family: $first-font;
@@ -259,7 +259,7 @@
 
   .cat-slider__controls {
     display: flex;
-    width: 564px;
+    width: 577px;
     justify-content: space-between;
     padding-left: 2px;
   }
@@ -270,6 +270,11 @@
     width: 340px;
     left: -15px;
     bottom: 119px;
+  }
+
+  .cat-slider__button--after {
+    margin-right: 0;
+    margin-left: 11px;
   }
 
   @media (min-resolution: 1.5dppx) {
@@ -289,6 +294,7 @@
 @media (min-resolution: 1.5dppx) {
     .cat-slider::after {
     background-image: url("../img/after-desktop@2x.png");
+    background-position: -365px;
     }
   }
 

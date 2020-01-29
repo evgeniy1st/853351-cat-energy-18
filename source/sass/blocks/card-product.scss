@@ -114,6 +114,10 @@
     margin-right: 80px;
   }
 
+  .card-product__title {
+    margin-bottom: 2px;
+  }
+
   .card-product {
     margin-right: 80px;
   }
@@ -124,6 +128,8 @@
 
   .card-product__description {
     width: 167px;
+    min-height: 187px;
+    justify-content: space-between;
   }
   .card-product__button {
     width: 169px;

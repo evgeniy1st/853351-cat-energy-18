@@ -6,7 +6,7 @@ mainNavigationList.classList.add('main-nav__list--close');
 mainNavigationToggle.classList.add('main-nav__toggle--close');
 mainNavigationToggle.classList.remove('main-nav__toggle--no-js');
 
-mainNavigationToggle.addEventListener('click', function(event) {
+mainNavigationToggle.addEventListener('click', function (event) {
   event.preventDefault();
 
   mainNavigationToggle.classList.toggle('main-nav__toggle--close');
@@ -21,13 +21,13 @@ if (document.querySelector('.cat-slider')) {
   var sliderIndicator = catSlider.querySelector('.cat-slider__indicator');
   var count = 0;
 
-  buttonBefore.addEventListener('click', function(event) {
+  buttonBefore.addEventListener('click', function (event) {
     event.preventDefault();
 
     count--;
     if (count === 0) {
-    catSlider.classList.remove('cat-slider--after');
-    sliderIndicator.classList.remove('cat-slider__indicator--after');
+      catSlider.classList.remove('cat-slider--after');
+      sliderIndicator.classList.remove('cat-slider__indicator--after');
     } else if (count < 0) {
       count = -1;
       catSlider.classList.add('cat-slider--before');
@@ -53,7 +53,7 @@ if (document.querySelector('.cat-slider')) {
 
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
-    center: [59.9387165, 30.3230474],
+    center: [59.939335836489406, 30.3223607253063],
     zoom: 17,
     controls: []
   }),
@@ -68,8 +68,8 @@ ymaps.ready(function () {
     }, {
       iconLayout: 'default#image',
       iconImageHref: '../img/map-pin.png',
-      iconImageSize: [55, 53],
-      iconImageOffset: [-5, -38]
+      iconImageSize: [124, 106],
+      iconImageOffset: [0, 0]
     })
 
   myMap.geoObjects

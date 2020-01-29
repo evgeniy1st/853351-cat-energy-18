@@ -11,7 +11,7 @@
 }
 
 @media (min-width: 768px) {
-    .map__image {
+  .map__image {
     width: 100%;
     object-fit: cover;
   }
@@ -27,6 +27,6 @@
 
 @media (min-width: 1300px) {
   .map {
-  height: 400px;
-}
+    height: 400px;
+  }
 }
