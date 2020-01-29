@@ -58,7 +58,7 @@
   height: 50px;
   position: absolute;
   background-image: url("../img/icon-cat-slim.svg");
-  top: 0px;
+  top: 0;
   left: 2px;
 }
 
@@ -134,7 +134,7 @@
     margin: 0;
     margin-bottom: 23px;
     width: 371px;
-    padding-top: 0px;
+    padding-top: 0;
     padding-left: 1px;
     padding-bottom: 0;
   }
@@ -194,7 +194,6 @@
 }
 
 @media (min-width: 1300px) {
-
   .preview-catalog {
     width: 1300px;
     margin-bottom: 37px;
@@ -263,7 +262,6 @@
   }
 
   .preview-catalog__link {
-    margin-top: auto;
     background-position: 131px 5px;
     margin-top: 0;
   }

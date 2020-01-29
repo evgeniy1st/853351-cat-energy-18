@@ -46,7 +46,6 @@
 }
 
 @media (min-width: 768px) {
-
   .main-banner {
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -97,7 +96,6 @@
 }
 
 @media (min-width: 1300px) {
-
   .main-banner {
     width: 1300px;
     background-image: url("../img/index-can-desktop@1x.png");
@@ -111,7 +109,8 @@
 
   .main-banner__button {
     font-size: 20px;
-    margin-left: 193px;
+    margin-left: 73px;
+    margin-top: 5px;
   }
 
   .main-banner__text {
@@ -119,10 +118,10 @@
     margin-top: 240px;
   }
 
-  .main-banner__button {
-    margin-left: 73px;
-    margin-top: 5px;
-  }
+  // .main-banner__button {
+  //   margin-left: 73px;
+  //   margin-top: 5px;
+  // }
 
   .main-banner::after {
     content: "";
@@ -147,7 +146,6 @@
 
     .main-banner::after {
       background-image: url("../img/index-background-desktop@2x.jpg");
-
     }
   }
 }

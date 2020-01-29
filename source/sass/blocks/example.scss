@@ -109,7 +109,7 @@
     line-height: 28px;
   }
 
-    .example__slider {
+  .example__slider {
     min-height: 462px;
     padding-left: 30px;
     padding-right: 30px;
@@ -129,7 +129,6 @@
 }
 
 @media (min-width: 1300px) {
-
   .example {
     background-color: #f2f2f2;
     min-height: 463px;
@@ -139,7 +138,6 @@
 
   .example__wrap {
     width: 650px;
-    margin-left: auto;
     justify-content: flex-start;
     position: relative;
     margin: 0 0;
@@ -148,7 +146,6 @@
 
   .example__slider-wrap {
     margin-left: 0;
-    margin-right: 0;
     width: 650px;
     margin-right: auto;
   }
@@ -173,7 +170,6 @@
     padding-top: 71px;
     padding-left: 41px;
     margin-right: auto;
-    margin-right: auto;
   }
 
   .example__result {
@@ -193,7 +189,7 @@
     span {
       margin-left: 60px;
     }
-}
+  }
 
 
   .example__slider {

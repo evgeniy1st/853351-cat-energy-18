@@ -58,7 +58,7 @@
   }
 
   .result__wrap--weight .result__text {
-    padding: 0 0px;
+    padding: 0 0;
     left: 24px;
     bottom: -6px;
     width: 114px;
@@ -66,9 +66,7 @@
 }
 
 @media (min-width: 1300px) {
-
   .result__text {
     background-color: #f2f2f2;
-    // bottom: -15px;
   }
 }

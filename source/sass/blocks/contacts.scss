@@ -59,7 +59,6 @@
 }
 
 @media (min-width: 768px) {
-
   .contacts__wrap {
     width: auto;
   }
@@ -80,14 +79,14 @@
     line-height: 25px;
   }
 
-    .contacts__address {
+  .contacts__address {
     text-align: right;
     font-size: 16px;
     line-height: 19px;
     margin-top: -1px;
     width: 159px;
+
     span {
-      padding-top: 10px;
       padding-top: 21px;
       display: inline-block;
       vertical-align: middle;
@@ -96,7 +95,6 @@
 }
 
 @media (min-width: 1300px) {
-
   .contacts {
     position: relative;
   }

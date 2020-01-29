@@ -9,7 +9,6 @@
   color: #111111;
   text-transform: uppercase;
   margin-bottom: 39px;
-  padding-left: 20px;
   padding-right: 20px;
   width: 300px;
   box-sizing: border-box;
@@ -26,7 +25,6 @@
 
 .main-form__wrap {
   display: flex;
-  padding-bottom: 34px;
   padding-left: 20px;
   padding-right: 20px;
   width: 320px;
@@ -48,7 +46,6 @@
 }
 
 @media (min-width: 768px) {
-
   .main-form {
     padding: 0;
     margin-bottom: 51px;
@@ -61,7 +58,6 @@
     line-height: 29px;
     box-sizing: border-box;
     width: 768px;
-    padding: 0;
     margin-left: auto;
     margin-right: auto;
     padding: 0 70px;

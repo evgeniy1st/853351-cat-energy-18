@@ -124,17 +124,35 @@
   .additional-product__title {
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 17px;
+    margin-bottom: 18px;
     margin-top: -25px;
     background-color: #ffffff;
     width: auto;
     padding-left: 18px;
     padding-right: 25px;
   }
+
+  .additional-product__item {
+    padding-bottom: 16px;
+    padding-top: 10px;
+    justify-content: space-between;
+    min-height: 102px;
+  }
+
+  .additional-product__name {
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+
+  .additional-product__table {
+    justify-content: space-between;
+    padding-bottom: 14px;
+    padding-left: 0;
+    margin: 0;
+  }
 }
 
 @media (min-width: 768px) {
-
   .additional-product {
     padding: 0 0;
     margin-bottom: 68px;
@@ -156,7 +174,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-    .additional-product__title {
+
+  .additional-product__title {
     margin-top: 0;
     padding-left: 0;
     margin-bottom: 67px;
@@ -190,7 +209,7 @@
 
 @media (min-width: 768px) and (max-width: 1299px) {
   .additional-product__title {
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     margin-top: -34px;
     background-color: #ffffff;
     width: auto;
@@ -209,6 +228,8 @@
 
   .additional-product__item {
     width: 632px;
+    padding-top: 23px;
+    padding-bottom: 27px;
   }
 
   .additional-product__wrap {
@@ -219,11 +240,19 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+
+  .additional-product__table {
+    width: 312px;
+    font-size: 16px;
+    padding-bottom: 8px;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 17px;
+  }
 }
 
 
 @media (min-width: 1300px) {
-
   .additional-product {
     padding-left: 0;
     padding-right: 0;
@@ -270,19 +299,21 @@
   .additional-product__item {
     border-left: none;
     border-right: none;
-    padding-top: 15px;
-    padding-bottom: 16px;
-    padding-left: 0;
-    padding-right: 0;
+    // padding-top: 15px;
+    // padding-bottom: 16px;
+    // padding-left: 0;
+    // padding-right: 0;
     align-items: center;
     padding: 0;
     justify-content: flex-start;
   }
+
   .additional-product__name {
     width: 324px;
     margin: 0;
     align-self: center;
   }
+
   .additional-product__button {
     width: 245px;
     margin-left: auto;
